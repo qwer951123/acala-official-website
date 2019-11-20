@@ -1,0 +1,42 @@
+@import '~@/styles/theme';
+
+@media (max-width: $mobile-breakpoint) {
+    .root {
+        @include margin(67px, 0, 0, 0);
+    }
+    .title {
+        @include font-title-medium;
+        @include font-700;
+    }
+    .list {
+        flex-direction: column;
+        @include margin(63px, 0, 0, 0);
+    }
+
+    $item-space: 48px;
+    .listItem {
+        width: 100%;
+        @include margin(0, 0, $item-space, 0);
+
+        &:nth-child(2) {
+            margin-top: 0;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            height: $item-space;
+            border-top: none;
+            border-left: 1px dashed $color-primary;
+        }
+    }
+
+    .itemContent {
+        @include padding(0, 26px, 0, 26px);
+        white-space: pre-wrap;
+    }
+
+
+}

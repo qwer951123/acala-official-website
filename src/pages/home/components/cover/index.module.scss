@@ -1,0 +1,72 @@
+@import '~@/styles/theme';
+@import './index.mobile.scss';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 150px;
+    width: 884px;
+    @include font-title-large;
+    @include font-700;
+    color: $color-light;
+    text-align: center;
+}
+
+.members {
+    margin-top: 65px;
+    @include font-body-medium;
+    @include font-600;
+    @include font-center;
+
+    color: $color-light;
+    font-family: 'Roboto';
+}
+
+.membersList {
+    @include margin(24px, 0, 0, 0);
+}
+
+.memberItem {
+    @include margin(0, 16px, 0, 0);
+    display: inline-block;
+    width: 82px;
+    height: 64px;
+    @include font-body-small;
+    color: $color-light-1;
+
+
+    & > img {
+        width: 100%;
+        height: 44px;
+        object-fit: contain;
+    }
+
+    &:last-child {
+        @include margin(0, 0, 0, 0);
+    }
+}
+
+.feature {
+    @include margin(72px, 0, 0, 0);
+    @include padding(50px, 128px, 43px, 128px);
+    @include raise-1;
+    background: $color-light;
+    @include font-body-large;
+    @include font-600;
+    @include font-center;
+    // overwrite
+    font-size: 26px;
+    line-height: 30px;
+    color: $color-primary;
+
+    & > .divider {
+        @include margin(14px, 0, 14px, 0);
+        width: 100%;
+        height: 1px;
+        background: $color-primary;
+    }
+}

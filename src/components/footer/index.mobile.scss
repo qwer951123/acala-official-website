@@ -1,0 +1,21 @@
+@import "~@/styles/theme.scss";
+
+@media (max-width: $mobile-breakpoint) {
+    .root {
+        @include margin(50px, 0, 0, 0);
+        flex-direction: column;
+        height: auto;
+    }
+
+    .follow {
+        flex-direction: column;
+    }
+
+    .followTitle {
+        @include font-vertical-center(50px);
+    }
+
+    .menu {
+        width: 100%;
+    }
+}

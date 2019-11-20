@@ -1,0 +1,25 @@
+@import '~@/styles/theme';
+
+.root {
+    @media (max-width: $mobile-breakpoint) {
+        .title {
+            width: 100%;
+            margin-top: 89px;
+            @include font-title-medium;
+            & > p {
+                word-break: break-all;
+            }
+        }
+        .feature {
+            box-sizing: border-box;
+            width: 100%;
+            @include padding(28px, 26px, 32px, 28px);
+            @include font-title-regular;
+            white-space: nowrap;
+
+            & > .divider {
+                @include margin(6px, 0, 6px, 0);
+            }
+        }
+    }
+}

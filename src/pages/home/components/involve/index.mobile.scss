@@ -1,0 +1,23 @@
+@import '~@/styles/theme';
+
+@media (max-width: $mobile-breakpoint) {
+    .root {
+        @include margin(117px, 0, 0, 0);
+    }
+
+    .title {
+        @include padding(0, 20%, 0, 20%);
+        @include font-title-medium;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .listItem {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 160px;
+        @include margin(0, 0, 38px, 0);
+    }
+}

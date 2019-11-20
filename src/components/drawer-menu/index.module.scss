@@ -1,0 +1,61 @@
+@import "~@/styles/theme.scss";
+
+.root {
+    button {
+        @include flex-center;
+    }
+}
+
+$drawer-width: calc(100vw * 0.6);
+.drawer {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: $drawer-width;
+    height: 100vh;
+    background: $color-light;
+    transform: translate3d(100%, 0, 0);
+    transition: transform 200ms ease-in-out;
+    @include raise-1;
+}
+
+.drawer.open {
+    transform: translate3d(0, 0, 0);
+}
+
+.drawerHeader {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    @include margin(50px, 34px, 0, 34px);
+
+    /* expansion close button click range */
+    button:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include margin(48px, 0, 0, 0);
+    @include font-700;
+    @include font-title-medium;
+    color: $color-primary;
+
+    a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+        color: $color-primary;
+    }
+
+    a {
+        margin-bottom: 20px;
+    }
+}

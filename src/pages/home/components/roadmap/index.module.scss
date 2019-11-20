@@ -1,0 +1,102 @@
+@import '~@/styles/theme';
+
+.root {
+    @include margin(140px, 0, 0, 0);
+}
+
+.title {
+    @include font-center;
+    @include font-title-large;
+    @include font-400;
+    color: $color-primary;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include margin(100px, 0, 0, 0);
+}
+
+$item-height: 322px;
+$item-title-height: 94px;
+
+.listItem {
+    position: relative;
+    width: 40%;
+    height: $item-height;
+    margin-right: 20%;
+
+    @include raise-1;
+    background: $color-light;
+
+    color: $color-dark;
+
+    li {
+        word-break: break-all;
+        white-space: pre-wrap;
+    }
+
+    &:last-child {
+        @include margin(0, 0, 0, 0);
+    }
+
+    &:nth-child(2) {
+        margin-top: $item-title-height;
+    }
+
+    /* the last child dont show dash */
+    &:last-child:after {
+        content: '';
+        display: none;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: calc(24px - 50%);
+        top: $item-title-height * 2;
+        width: calc(50% - 2 * 24px);
+        border-top: 1px dashed $color-primary;
+    }
+}
+
+.itemTitle {
+    display: flex;
+    height: $item-title-height;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.itemIcon {
+    @include flex-center;
+    flex-shrink: 0;
+    width: $item-title-height;
+    height: $item-title-height;
+    background: $color-primary;
+}
+
+.itemTitleContent {
+    flex: 1;
+    @include flex-center;
+    @include font-title-regular;
+    @include font-700;
+}
+
+.itemContent {
+    height: $item-height - $item-title-height;
+    @include padding(0, 0, 0, 52px);
+    @include flex-center;
+    /* overwrite */
+    justify-content: flex-start;
+    @include font-body-large;
+    @include font-600;
+    font-family: 'Roboto';
+    white-space: nowrap;
+
+    & li {
+        margin-bottom: 16px;
+    }
+}
+
+// beause of css priority rules, mobile styles must put here
+@import './index.mobile.scss';

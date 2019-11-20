@@ -1,0 +1,39 @@
+@import "~@/styles/theme.scss";
+
+.root {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $header-height;
+    color: $color-light;
+
+    $icon-width: 26px;
+    .icon {
+        @include flex-center;
+        @include font-700;
+        font-size: 20px;
+        line-height: 30px;
+        & > img {
+            width: $icon-width;
+            height: $icon-width;
+            object-fit: contain;
+            margin-right: 18px;
+        }
+    }
+
+    /* show when device is mobile */
+    .drawerMenu {
+        display: none;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        .menu {
+            display: none;
+        }
+        .drawerMenu {
+            display: block;
+        }
+    }
+}

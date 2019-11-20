@@ -1,0 +1,68 @@
+@import '~@/styles/theme';
+
+.root {
+    @include margin(137px, 0, 0, 0);
+}
+
+.title {
+    @include font-title-medium;
+    @include font-center;
+    color: $color-primary;
+    vertical-align: top;
+}
+
+$card-width: 840px;
+$card-height: 126px;
+.list {
+    position: relative;
+    @include margin(133px, auto, 0, auto);
+    width: $card-width;
+
+    &:before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        left: $card-height / 2;
+        height: 100%;
+        border-left: 1px dashed $color-primary;
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    @include margin(56px, 0, 0, 0);
+    min-height: $card-height;
+    background: $color-light;
+    @include raise-1;
+
+    &:first-child {
+        @include margin(0, 0, 0, 0);
+    }
+}
+
+.cardTitle {
+    flex-shrink: 0;
+    width: $card-height;
+    height: $card-height;
+    background: $color-primary-3;
+
+    @include font-center;
+    @include font-700;
+    color: $color-light;
+    font-size: 28px;
+    line-height: $card-height;
+}
+
+.cardContent {
+    display: flex;
+    align-items: center;
+    @include padding(0, 52px, 0, 52px);
+    @include font-body-large;
+    @include font-600;
+    font-family: 'Roboto';
+    color: $color-dark;
+}
+
+@import './index.mobile.scss';

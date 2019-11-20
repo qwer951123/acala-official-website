@@ -1,0 +1,11 @@
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hompage" transform="translate(-928.000000, -2489.000000)" fill="#FFFFFF">
+            <g id="Roadmap" transform="translate(218.000000, 2202.000000)">
+                <g id="2020.02" transform="translate(678.000000, 255.000000)">
+                    <path d="M42.1666667,32 L42.166,40.166 L52.5,40.166 L52.5,32 L54.1666667,32 L54.166,40.166 L62,40.1666667 L62,41.8333333 L54.166,41.833 L54.166,52.166 L62,52.1666667 L62,53.8333333 L54.166,53.833 L54.1666667,62 L52.5,62 L52.5,53.833 L42.166,53.833 L42.1666667,62 L40.5,62 L40.5,53.833 L32,53.8333333 L32,52.1666667 L40.5,52.166 L40.5,41.833 L32,41.8333333 L32,40.1666667 L40.5,40.166 L40.5,32 L42.1666667,32 Z M52.5,41.833 L42.166,41.833 L42.166,52.166 L52.5,52.166 L52.5,41.833 Z" id="Hushtag"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

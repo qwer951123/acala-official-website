@@ -1,0 +1,19 @@
+@import '~@/styles/theme';
+
+@media (max-width: $mobile-breakpoint) {
+    .root {
+        @include margin(170px, 0, 0, 0);
+        @include padding(48px, 26px, 39px, 26px);
+    }
+
+    $list-item-space: 60px;
+    .list {
+        flex-wrap: wrap;
+        @include margin(78px, 0, -$list-item-space, 0);
+    }
+
+    .listItem {
+        width: calc(50% - 35px / 2);
+        margin-bottom: $list-item-space;
+    }
+}

@@ -1,0 +1,70 @@
+@import '~@/styles/theme';
+
+.root {
+    @include margin(140px, 0, 0, 0);
+}
+
+.list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &:before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        width: 100%;
+        border-top: 1px dashed $color-primary;
+    }
+}
+
+@media (min-width: $container-width + 2 * 48px) {
+    .list {
+    @include margin(0, -48px, 0, -48px);
+    }
+}
+
+.listItem {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    @include margin(0, 48px, 0, 0);
+    @include padding(38.4px, 48px, 10px, 48px);
+    @include raise-2;
+    background: $color-light;
+
+    &:last-child {
+        @include margin(0, 0, 0, 0);
+    }
+}
+
+.itemIcon {
+    display: block;
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.itemTitle {
+    @include margin(17.2px, 0, 0, 0);
+    @include font-body-medium;
+    @include font-600;
+    color: $color-primary-1;
+}
+
+.itemContent {
+    @include margin(12px, 0, 0, 0);
+    @include font-body-small;
+    @include font-400;
+    color: $color-dark;
+    font-family: 'Roboto';
+    // overwrite
+    font-size: 15.6px;
+    line-height: 24px;
+}
+
+// beause of css priority rules, mobile styles must put here
+@import './index.mobile.scss';

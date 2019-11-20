@@ -1,0 +1,23 @@
+@import '~@/styles/theme';
+
+.root {
+    @media (max-width: $mobile-breakpoint) {
+        .list {
+            @include margin(73px, 0, 0, 0);
+            width: 100%;
+        }
+        .card {
+            flex-direction: column;
+            min-height: 290px;
+        }
+        $card-title-height: 87px;
+        .cardTitle {
+            width: 99px;
+            height: $card-title-height;
+            line-height: $card-title-height;
+        }
+        .cardContent {
+            @include padding(33px, 38px, 42px, 27px);
+        }
+    }
+}

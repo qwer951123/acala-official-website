@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="126px" height="37px" viewBox="0 0 126 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>laminar</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="12.752381%" y1="45.5802606%" x2="91.0714286%" y2="58.4997474%" id="linearGradient-1">
+            <stop stop-color="#0055FF" offset="0%"></stop>
+            <stop stop-color="#0A52F5" offset="9%"></stop>
+            <stop stop-color="#2648D9" offset="23%"></stop>
+            <stop stop-color="#523AAD" offset="42%"></stop>
+            <stop stop-color="#90256F" offset="65%"></stop>
+            <stop stop-color="#DE0B21" offset="90%"></stop>
+            <stop stop-color="#FF0000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="17.3190476%" y1="41.8913319%" x2="103.238095%" y2="76.2730182%" id="linearGradient-2">
+            <stop stop-color="#000000" stop-opacity="0" offset="50%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.87" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hompage" transform="translate(-224.000000, -3183.000000)" fill-rule="nonzero">
+            <g id="Launch" transform="translate(224.000000, 2919.000000)">
+                <g id="Logos" transform="translate(0.000000, 158.000000)">
+                    <g id="laminar" transform="translate(0.000000, 106.000000)">
+                        <path d="M126,35.835 C125.807552,20.9482687 116.471362,7.71577391 102.510879,2.54308277 C88.5503969,-2.62960837 72.8460593,1.32477476 63,12.492 C53.0972701,1.26335955 37.2786888,-2.66431998 23.2738372,2.62818013 C9.26898561,7.92068024 0.00156434787,21.3284796 0,36.3 L18,36.3 C18,36.144 18,36 18,35.835 C18.1284064,25.8938746 26.2913746,17.9390941 36.2325,18.0675003 C46.1736254,18.1959065 54.1284061,26.3588746 54,36.3 L72,36.3 C72,36.144 72,36 72,35.835 C72.1284064,25.8938746 80.2913746,17.9390941 90.2325,18.0675003 C100.173625,18.1959065 108.128406,26.3588746 108,36.3 L126,36.3 C126,36.144 126,36 126,35.835 Z" id="路径" fill="url(#linearGradient-1)"></path>
+                        <path d="M63,12.492 C57.1892473,19.060225 53.9873245,27.5303782 53.9999625,36.3 L72,36.3 C72,36.144 72,36 72,35.835 C71.8985291,27.2260719 68.7041072,18.9408061 63,12.492 Z" id="路径" fill="#0000FF" opacity="0.31" style="mix-blend-mode: multiply;"></path>
+                        <path d="M45,1.434 C34.218847,-1.33732926 22.7620618,1.03031224 13.9625897,7.84814317 C5.1631177,14.6659741 0.00913126749,25.1683585 1.42108547e-14,36.3 L18,36.3 C18,36.144 18,36 18,35.835 C18.1284064,25.8938746 26.2913746,17.9390941 36.2325,18.0675003 C46.1736254,18.1959065 54.1284061,26.3588746 54,36.3 C53.9873245,27.5303782 57.1892473,19.060225 63,12.492 C58.2418032,7.08774358 51.9714093,3.23563161 45,1.434 Z" id="路径" fill="url(#linearGradient-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

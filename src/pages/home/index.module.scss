@@ -1,0 +1,48 @@
+@import '~@/styles/theme';
+
+
+$step-1-height: $cover-height + $header-height;
+$step-2-height: $step-1-height + 2319px;
+$stripe-deg: 150deg;
+$stripe-width-1: 1000px;
+$stripe-width-2: 1560px;
+$stripe-color-white: rgba(255, 255, 255, 0.1);
+$stripe-color-blue: rgba(1, 50, 204, 0.02);
+$stripe-offset-x: 200px;
+.root {
+    position: relative;
+    background:
+        repeating-linear-gradient(
+            $stripe-deg, transparent 0, transparent $stripe-width-1, $stripe-color-white 0, $stripe-color-white $stripe-width-2
+        ) no-repeat,
+        repeating-linear-gradient(
+            $stripe-deg, transparent 0, transparent $stripe-width-1, $stripe-color-blue 0, $stripe-color-blue $stripe-width-2
+        ) no-repeat,
+        linear-gradient(
+            to bottom, $color-primary 0, $color-primary $step-1-height,
+            $color-light 0, $color-light $step-2-height,
+            $color-primary 0, $color-primary 100%
+        );
+}
+
+.decoration {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    $step-1-height: 660px;
+    $step-2-height: calc(100% - 1390px);
+    .root {
+        background: linear-gradient(
+            to bottom,
+            $color-primary 0, $color-primary $step-1-height,
+            $color-light 0, $color-light $step-2-height,
+            $color-primary 0, $color-primary 100%
+        );
+    }
+}

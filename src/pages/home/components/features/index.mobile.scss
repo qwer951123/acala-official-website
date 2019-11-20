@@ -1,0 +1,30 @@
+@import '~@/styles/theme';
+
+@media (max-width: $mobile-breakpoint) {
+    .root {
+        @include margin(70px, 0, 0, 0);
+    }
+    .list {
+        flex-direction: column;
+        @include margin(0, 0, 0, 0);
+        width: 100%;
+
+        &:before {
+            height: 100%;
+            width: 1px;
+            top: 0;
+            left: 50%;
+            border-top: none;
+            border-left: 1px dashed $color-primary;
+        }
+    }
+    .listItem {
+        @include margin(0, 0, 39px, 0);
+        @include padding(37.4px, 31px, 10px, 31px);
+        min-height: 264px;
+    }
+
+    .itemTitle {
+        margin-top: 17.6px;
+    }
+}

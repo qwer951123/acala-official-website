@@ -1,0 +1,42 @@
+@import "~@/styles/theme.scss";
+
+.root {
+    display: flex;
+    a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+        color: $color-light;
+    }
+}
+
+$menu-item-height: 50px;
+.item {
+    flex: 1 1 120px;
+    @include padding(0, 26px, 0, 26px);
+    height: $menu-item-height;
+
+    color: $color-light;
+    text-align: center;
+    @include font-body-small;
+    font-size: 14px;
+    line-height: $menu-item-height;
+}
+
+.root .item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
+}
+
+.icon:hover {
+    cursor: pointer;
+}

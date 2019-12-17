@@ -144,7 +144,7 @@ const config: SiteConfig = {
             },
             {
                 title: 'Investors',
-                content: 'Talk to us about investing in Acala Network Laminar and Polkawallet venture portfolio.'
+                content: 'Talk to us about investing in Acala Network, Laminar and Polkawallet venture portfolio.'
             }
         ]
     },

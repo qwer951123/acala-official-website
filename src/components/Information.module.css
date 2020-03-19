@@ -1,0 +1,277 @@
+.root {
+    overflow: hidden;
+    background:
+        url('../assets/information-background.svg') 0 0/100% auto no-repeat,
+        linear-gradient(#ffffff, 0, #ffffff 142px, #F0F1F5 142px, #F0F1F5 1947px, #ffffff 1947px);
+}
+
+.token {
+    box-sizing: border-box;
+    position: relative;
+    margin: 42px auto 0 auto;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #ecf0f2;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px 0 rgba(1, 50, 204, 0.08);
+}
+
+.tokenDetail {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 600;
+}
+
+.tokenExtra {
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.tokenBtn {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+}
+
+.acalaTitle {
+    margin-top: 90px;
+    font-size: 48px;
+    line-height: 58px;
+    color: #333333;
+    text-align: center;
+    font-weight: 600;
+}
+
+.acalaDescribe {
+    margin: 24px auto 0 auto;
+    width: 1046px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+    text-align: center;
+}
+
+.describe {
+    margin: 64px 0 -24px -24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.describeItem {
+    margin: 0 0 24px 24px;
+    box-sizing: border-box;
+    flex: 0 0 588px;
+    height: 268px;
+    padding: 28px 24px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(194, 203, 207, 0.3);
+}
+
+.describeIcon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.describeTitle {
+    margin-top: 23px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.describeDetail {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.acalaAppsContent {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.features {
+    position: relative;
+    box-sizing: border-box;
+    flex: 0 0 455px;
+    padding: 32px 29px 30px 32px;
+    background: #ffffff;
+    margin-bottom: 263px;
+}
+
+.featureItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.featureItem:last-child {
+    margin-bottom: 0;
+}
+
+.featureIcon {
+    display: block;
+    flex: 0 0 46px;
+    height: 46px;
+    object-fit: contain;
+}
+
+.featureContent {
+    flex: 1;
+    margin-left: 32px;
+}
+
+.featureTitle {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+}
+
+.featureDetail {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.screenshot {
+    flex: 0 0 696px;
+    height: 410px;
+    background-size: center;
+    box-shadow: 0 40px 140px rgba(1, 50, 204, 0.08);
+}
+
+.goToAppsBtn {
+    position: absolute;
+    bottom: -90px;
+    left: 131px;
+}
+
+.goToAppsBtn > img {
+    display: inline-block;
+    width: 26px;
+    height: 22px;
+    margin-left: 11px;
+}
+
+@media (max-width: 740px) {
+    .root {
+        background: linear-gradient(#ffffff, 0, #ffffff 82px, #F0F1F5 82px, #F0F1F5);
+        padding-bottom: 20px;
+    }
+
+    .token {
+        margin-top: 22px;
+        width: 100%;
+        height: 158px;
+    }
+
+    .tokenDetail {
+        margin-top: 16px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .tokenExtra {
+        margin-top: 8px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .tokenBtn {
+        margin-top: 16px;
+        width: 261px;
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+    }
+
+    .acalaTitle {
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .acalaDescribe {
+        margin-top: 8px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .describe {
+        margin-top: 24px;
+        margin-bottom: -20px;
+        flex-direction: column;
+    }
+
+    .describeItem {
+        margin-bottom: 20px;
+        flex: 0 0 303px;
+    }
+
+    .acalaAppsContent {
+        flex-direction: column;
+        margin-top: 24px;
+    }
+
+    .features {
+        flex: 0 0 auto;
+        padding: 24px;
+        margin-bottom: 0;
+    }
+
+    .featureItem {
+        flex: 0 0 434px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .featureIcon {
+        margin-top: 3px;
+        flex: 0 0 20px;
+        height: 17px;
+    }
+
+    .featureContent {
+        margin-left: 17px;
+    }
+
+    .featureTitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .featureDetail {
+        font-size: 16px;
+        line-height: 24px;
+        white-space: pre-wrap;
+    }
+
+    .screenshot {
+        margin-top: 20px;
+        flex: 0 0 198px;
+        background-size: 100% auto;
+    }
+
+    .goToAppsBtn {
+        position: relative;
+        margin: 16px auto 0 auto;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}

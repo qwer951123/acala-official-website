@@ -1,0 +1,152 @@
+.title {
+    margin-top: calc(129px + 90.5px);
+    width: 750px;
+    font-size: 45px;
+    line-height: 72px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.background {
+    z-index: -1;
+    position: absolute;
+    top: -95px;
+    right: 0;
+    width: 607px;
+    height: 595px;
+    object-fit: cover;
+}
+
+.member {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #98a5ae;
+}
+
+.memberList {
+    display: flex;
+}
+
+.memberItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17px;
+    margin-right: 60px;
+}
+.memberItem:last {
+    margin-right: 0;
+}
+
+.memberItemImg {
+    display: block;
+    width: 60px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.memberItemTitle {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.assetsList {
+    margin-top: 157px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.assetItem {
+    margin-right: 100px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 19px;
+    color: #98a5ae;
+}
+.assetItem:last {
+    margin-right: 0;
+}
+
+.assetItemImg {
+    height: 60px;
+    object-fit: contain;
+}
+
+.assetItemTitle {
+    margin-top: 17px;
+}
+
+@media (max-width: 720px) {
+    .background {
+        display: block;
+        margin: 72px auto 0 auto;
+        position: relative;
+        top: 0;
+        width: 227px;
+        height: 222px;
+    }
+
+    .title {
+        margin: 6px 0 0 0;
+        width: auto;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .member {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .memberList {
+        display: flex;
+        justify-content: center;
+        flex: 0 0 100%;
+    }
+
+    .memberItem {
+        margin-right: 54px;
+    }
+
+    .memberItem:last-child {
+        margin-right: 0;
+    }
+
+    .memberItemImg {
+        margin: 0 auto;
+        width: 31px;
+        height: 26px;
+    }
+
+    .memberItemTitle {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .assetsList {
+        margin-top: 18px;
+    }
+
+    .assetItem {
+        margin-right: 24px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .assetItem:last-child {
+        margin-right: 0;
+    }
+
+    .assetItemImg {
+        width: 23px;
+        height: 21px;
+    }
+}

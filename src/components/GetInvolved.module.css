@@ -1,0 +1,78 @@
+.root {
+  margin-top: 112px;
+  border-radius: 1.86px;
+  background: url("../assets/get-involved-bg.svg") top right/auto 100% no-repeat,
+    linear-gradient(-50deg, #3436ff 0%, #5400ff 100%);
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 90px 0 129px 0;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.list {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  box-sizing: border-box;
+  flex: 0 0 380px;
+  padding: 24px 32px;
+  height: 300px;
+  background: #ffffff;
+}
+
+.itemIcon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.itemTitle {
+  margin-top: 23px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.itemDesc {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 740px) {
+  .root {
+    margin-top: 24px;
+  }
+
+  .container {
+    padding: 24px 0;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .list {
+    margin-top: 4px;
+    flex-direction: column;
+  }
+
+  .item {
+    flex: 1;
+    height: auto;
+    margin-top: 20px;
+  }
+}

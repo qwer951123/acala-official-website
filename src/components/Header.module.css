@@ -1,0 +1,46 @@
+.header {
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: 90.5px;
+    border-bottom: 1px solid #ecf0f2;
+    background: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: inline-block;
+    width: 171px;
+    height: 53px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+}
+.menuItem {
+    margin-left: 64px;
+}
+
+@media (max-width: 720px) {
+    .header {
+        height: 72px;
+        overflow: hidden;
+    }
+
+    .logo {
+        width: 88px;
+        height: 28px;
+    }
+
+    .menu {
+        display: none;
+    }
+}

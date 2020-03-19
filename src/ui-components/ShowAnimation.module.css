@@ -1,0 +1,43 @@
+.initialize {
+    visibility: hidden;
+}
+
+.show {
+    animation: show 1.1s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    0% {
+        pointer-events: none;
+        visibility: visible;
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        pointer-events: inherit;
+        visibility: visible;
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.delay-1 {
+    animation-delay: 100ms;
+}
+
+.delay-2 {
+    animation-delay: 200ms;
+}
+
+.delay-3 {
+    animation-delay: 300ms;
+}
+
+.delay-4 {
+    animation-delay: 400ms;
+}
+
+.delay-5 {
+    animation-delay: 500ms;
+}

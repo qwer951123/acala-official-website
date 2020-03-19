@@ -1,0 +1,139 @@
+.root {
+  width: 100%;
+  height: 800px;
+  background-image: url("../assets/councli-background.svg");
+  background-position: top right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  /* bfc */
+  overflow: hidden;
+}
+
+.container {
+  margin-top: 231px;
+  display: flex;
+}
+
+.title {
+  margin-right: 40px;
+  flex: 0 0 248px;
+  line-height: 38px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.members {
+  flex: 1;
+  display: flex;
+  margin-right: -28px;
+}
+
+.memberItem {
+  flex: 0 0 288px;
+  margin-right: 28px;
+  height: 414px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(1, 50, 204, 0.08);
+  overflow: hidden;
+}
+
+.memberItem:last {
+  margin-right: 0;
+}
+
+.memberItem:hover > .memberCover {
+  transform: translate3d(0, -100%, 0);
+}
+.memberItem:hover > .memberDetail {
+  transform: translate3d(0, -100%, 0);
+}
+
+.memberCover,
+.memberDetail {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  transition: 300ms ease-in-out;
+  transition-delay: 200ms;
+  cursor: pointer;
+  color: #333333;
+  font-weight: 400;
+}
+
+.memberCover {
+  padding: 54px;
+  text-align: center;
+}
+
+.memberCover > .memberName {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.memberDetail {
+  padding: 24px;
+}
+
+.memberDetail .memberHeader {
+  display: flex;
+  align-items: center;
+}
+
+.memberDetail .memberPhoto {
+  flex: 0 0 64px;
+  height: 64px;
+}
+
+.memberDetail .memberName {
+  margin-left: 16px;
+  font-size: 24px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.memberDetail .memberIntroduction {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media (max-width: 740px) {
+  .root {
+    background: none;
+  }
+
+  .container {
+    margin-top: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    flex: 0 0 29px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .members {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .memberItem {
+    margin-top: 20px;
+    margin-right: 0;
+    height: auto;
+    flex: 1;
+  }
+
+  .memberCover {
+    display: none;
+  }
+
+  .memberItem:hover > .memberDetail {
+    transform: translate3d(0, 0, 0);
+  }
+}

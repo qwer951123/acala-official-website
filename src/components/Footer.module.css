@@ -1,0 +1,78 @@
+.root {
+    margin: 120px 0 96px 0;
+    color: #333333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foundation {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.socialMedia {
+    margin: 24px 0 0 -16px;
+    display: flex;
+}
+
+.socialMediaItem {
+    margin-left: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.links {
+    display: flex;
+    margin-left: -60px;
+}
+
+.linkItem {
+    margin-left: 60px;
+}
+
+.linkItemTitel {
+    font-size: 24px;
+    line-height: 28px;
+    color: #3732ff;
+}
+
+.linkItemData {
+    margin-top: 17px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.linkDataItemLink, .linkDataItemLink:link, .linkDataItemLink:visited, .linkDataItemLink:hover, .linkDataItemLink:active {
+    color: #333333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.linkDataItemLink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 740px) {
+    .root {
+        margin-top: 60px;
+        margin-bottom: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .links {
+        margin-top: 42px;
+        flex-direction: column;
+    }
+
+    .linkItem {
+        margin-bottom: 24px;
+    }
+}

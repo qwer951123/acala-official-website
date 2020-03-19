@@ -1,0 +1,300 @@
+.root {
+  box-sizing: border-box;
+  padding: 90px 0;
+  height: 695px;
+  background: url("../assets//roadmap-background.svg") 0 0/100% auto no-repeat,
+    linear-gradient(-50deg, #3436ff 0%, #5400ff 100%);
+}
+
+.title {
+  line-height: 71px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70.5px;
+  padding-bottom: 20px;
+  transition: transform 400ms ease-in-out;
+}
+
+.timelineContainer {
+  overflow: hidden;
+}
+
+.precent {
+  position: absolute;
+  top: -59px;
+  left: -24px;
+  height: 3px;
+  width: calc(100% + 48px);
+  background: #ffffff;
+}
+
+.precent.feature {
+  background: rgba(277, 234, 239, 0.12);
+}
+
+.timelineItem:last-child {
+  margin-right: 0;
+}
+
+.timelineItem {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 55.5px;
+  margin-right: 48px;
+  padding: 30px 24px 38px 24px;
+  flex: 0 0 308px;
+  height: 318px;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 5px 19px rgba(1, 50, 204, 0.08);
+  text-align: center;
+}
+
+.timelineItem::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 0;
+  top: -20px;
+  left: calc(50% - 10px);
+  background: transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+}
+
+.timelineItem.current {
+  background-image: linear-gradient(179deg, #ffffff 66%, #bbceff 100%);
+}
+
+.timelineItem::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 0;
+  top: -65px;
+  left: calc(50% - 7.5px);
+  width: 15px;
+  height: 15px;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+}
+
+.timelineItem.current::before {
+  top: -68px;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+}
+
+.timelineItem.feature {
+  background: rgba(255, 255, 255, 0.21);
+  color: #ffffff;
+}
+.timelineItem.feature::after {
+  border-bottom: 10px solid rgba(255, 255, 255, 0.21);
+}
+
+.timelineItem.feature p,
+.timelineItem.feature span {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.timelineItem.feature::before {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.timelineLine {
+  position: absolute;
+  left: 0;
+  top: -58.5px;
+  height: 3px;
+  width: 120%;
+  background: #ffffff;
+  color: #333333;
+}
+
+.timelineYear {
+  font-size: 80px;
+  line-height: 95px;
+  font-weight: 600;
+}
+
+.timelineQuarter {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.timelineDetail {
+  margin-top: 44px;
+}
+
+.timelineDetail p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.timelineDetail li {
+  position: relative;
+  padding-left: 35px;
+}
+
+.timelineDetail li:after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  width: 6px;
+  height: 6px;
+  background: url("../assets/roadmap-dot-black.svg") no-repeat;
+}
+
+.timelineDetail li.complated:after {
+  top: 9px;
+  left: 0;
+  width: 24px;
+  height: 18px;
+  background: url("../assets/roadmap-success.svg") no-repeat;
+}
+
+.timelineItem.feature li::after {
+  background: url("../assets/roadmap-dot-white.svg") no-repeat;
+}
+
+.controll {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+.prevBtn,
+.nextBtn {
+  min-width: 42px;
+  height: 42px;
+  margin-left: 16px;
+}
+
+.prevBtn {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 740px) {
+  .root {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: auto;
+    background: linear-gradient(
+      to bottom,
+      #3436ff,
+      #3436ff 263px,
+      #ffffff 263px
+    );
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .timelineContainer {
+    overflow-x: auto;
+  }
+
+  .timeline {
+    width: 928px;
+    margin-top: 24px;
+  }
+
+  .timelineItem {
+    margin-top: 29.74px;
+    margin-right: 24px;
+    flex: 0 0 212px;
+    height: 212px;
+    padding: 17px;
+    white-space: nowrap;
+  }
+
+  .timelineItem::before {
+    top: -39px;
+  }
+
+  .timelineItem.current::before {
+    top: -39px;
+  }
+
+  .precent {
+    position: absolute;
+    top: -33px;
+    left: -12px;
+    width: calc(100% + 24px);
+    background: #ffffff;
+  }
+
+  .precent.feature {
+    background: rgba(277, 234, 239, 0.12);
+  }
+
+  .timelineYear {
+    font-size: 54px;
+    line-height: 65px;
+  }
+
+  .timelineQuarter {
+    font-size: 16.4px;
+    line-height: 20px;
+  }
+
+  .timelineDetail {
+    margin-top: 31px;
+  }
+
+  .timelineItem.current::before {
+    top: -42px;
+  }
+
+  .timelineDetail p {
+    font-size: 16px;
+    line-height: 24.74px;
+  }
+
+  .timelineItem.feature {
+    background: #ffffff;
+  }
+
+  .timelineItem.feature p,
+  .timelineItem.feature span {
+    color: #333333;
+  }
+
+  .timelineDetail li.complated:after {
+    top: 8px;
+    left: 0;
+    width: 17px;
+    height: 12px;
+    background: url("../assets/roadmap-success.svg") no-repeat;
+    background-size: contain;
+  }
+
+  .controll {
+    display: none;
+  }
+
+  .timelineItem.feature::after {
+    border-bottom: 10px solid #ffffff;
+  }
+
+  .timelineItem.feature li::after {
+    background: url("../assets/roadmap-dot-black.svg") no-repeat;
+  }
+}

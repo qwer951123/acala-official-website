@@ -98,3 +98,38 @@
 .menuItem:last-child {
     border-bottom: none;
 }
+
+@media (max-width: 740px) {
+    .root {
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+
+    .title {
+        justify-content: center;
+    }
+
+    .arrowIcon {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: relative;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        filter: none;
+        background: transparent;
+        width: auto;
+        text-align: center;
+        padding: 0;
+    }
+
+    .menu::before {
+        display: none;
+    }
+    .menu::after {
+        display: none;
+    }
+}

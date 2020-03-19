@@ -8,7 +8,6 @@ import mandalaIcon from "../assets/mandala.svg";
 import polkadotWalletIcon from "../assets/polkadot-wallet.svg";
 import laminarIcon from "../assets/laminar.svg";
 import coverBackground from "../assets/cover-background.gif";
-import { ShowAnimation } from "../ui-components/ShowAnimation";
 
 const Member = ({ members }) => {
     return (

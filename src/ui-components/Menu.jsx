@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import classes from './Menu.module.css';
 import arrowDown from '../assets/arrow-down.svg';
 
-export const Menu = ({ title, menu, className }) => {
+export const Menu = ({ title, menu, className, onClick }) => {
     return (
         <div className={clsx(classes.root, className)}>
             <p className={classes.title}>
@@ -13,7 +13,7 @@ export const Menu = ({ title, menu, className }) => {
             <ul className={clsx(classes.menu)}>
                 {
                     menu && menu.map(({ name, link, anchor }, index) => (
-                        <li className={classes.menuItem} key={`${title}-item-${index}`}>
+                        <li className={classes.menuItem} key={`${title}-item-${index}`} onClick={onClick}>
                             {
                                 anchor && <a href={`#${anchor}`}>{name}</a>
                             }

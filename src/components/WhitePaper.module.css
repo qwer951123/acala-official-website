@@ -11,7 +11,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: calc(50vw + 600px);
     height: 970px;
     background: url('../assets/whitepaper-background.svg') no-repeat, #4C00FF;
 }

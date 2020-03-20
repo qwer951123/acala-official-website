@@ -19,7 +19,7 @@ const DocumentList = React.forwardRef(({ list }, ref) => {
                             <img src={icon} className={classes.documentIcon}/>
                             <p className={classes.documentTitle}>{title}</p>
                             <p className={classes.documentDetail}>{detail}</p>
-                            <Button className={classes.documentLink} link="https://github.com/AcalaNetwork/Acala-white-paper">
+                            <Button className={classes.documentLink} link={link}>
                                 <RightArrowIcon />
                             </Button>
                         </li>
@@ -36,17 +36,20 @@ export const WhitePaper = () => {
         {
             icon: economyIcon,
             title: 'Token Economy',
-            detail: 'This paper outlines key utilities of the ACA tokens, its distribution model to support continuous R&D and gradual decentralization, and explores economic models to participate in parachain auctions over multiple periods under varied circumstances.'
+            detail: 'This paper outlines key utilities of the ACA tokens, its distribution model to support continuous R&D and gradual decentralization, and explores economic models to participate in parachain auctions over multiple periods under varied circumstances.',
+            link: 'https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Acala_Token_Economy_Paper.pdf'
         },
         {
             icon: whitePaperIcon,
             title: 'Acala Whitepaper',
-            detail: 'This paper introduces and elaborates on two decentralized protocols that enable cross-chain financial stability and liquidity on the Polkadot network - the Honzon Stablecoin Protocol and the Homa Tokenized Staking Liquidity Protocol.'
+            detail: 'This paper introduces and elaborates on two decentralized protocols that enable cross-chain financial stability and liquidity on the Polkadot network - the Honzon Stablecoin Protocol and the Homa Tokenized Staking Liquidity Protocol.',
+            link: 'https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Acala_Whitepaper.pdf',
         },
         {
             icon: decentralizedIcon,
             title: 'Decentralized Sovereign Wealth Fund (dSWF)',
-            detail: 'This paper proposes a self-sustaining economic model for the era of connected digital jurisdictions - a dSWF to hold foreign cryptocurrency reserve with value, yield & utility, to secure a parachain on for itself & others, R&D for generations to come, all on behalf of & governed by token holders.',
+            detail: 'This paper proposes a self-sustaining economic model for the era of connected digital jurisdictions - a dSWF to hold foreign cryptocurrency reserve with value, yield & utility, to secure a parachain on Polkadot for itself and others, R&D for generations to come, all on behalf of and governed by token holders.',
+            link: 'https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Building_a_Decentralized_Sovereign_Wealth_Fund.pdf'
         }
     ]
     return (
@@ -57,7 +60,9 @@ export const WhitePaper = () => {
                     <div className={classes.summary}>
                         <img className={classes.icon} src={acalaLogo}/>
                         <p className={classes.title}>Acala’s Whitepaper</p>
-                        <p className={classes.detail}>This paper outlines key utilities of the ACA tokens, its distribution model to support continuous R&D and gradual decentralization, and explores economic models to participate in parachain auctions over multiple periods under varied circumstances.</p>
+                        <p className={classes.detail}>
+                            Acala Foundation’s research generally focuses on decentralized finance protocol and mechanism design, parachain economic modelling and governance.
+                        </p>
                     </div>
                 </ShowAnimation>
                 <ShowAnimation delay={2}>

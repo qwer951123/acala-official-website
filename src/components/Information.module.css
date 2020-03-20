@@ -34,10 +34,18 @@
 }
 
 .tokenBtn {
+    height: 56px;
+    flex-direction: column;
     position: absolute;
     right: 60px;
     top: 50%;
     transform: translate3d(0, -50%, 0);
+}
+
+.testnet {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .acalaTitle {
@@ -154,6 +162,7 @@
 }
 
 .goToAppsBtn {
+    height: 56px;
     position: absolute;
     bottom: -90px;
     left: 131px;

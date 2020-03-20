@@ -19,7 +19,10 @@ const Token = () => {
         <div className={classes.token}>
             <p className={classes.tokenDetail}>1 Acala Dollar  =  1 US Dollar</p>
             <p className={classes.tokenExtra}>Ticker : aUSD</p>
-            <Button className={classes.tokenBtn} link="https://apps.acala.network/">Get Acala Dollar</Button>
+            <Button className={classes.tokenBtn} link="https://apps.acala.network/">
+                Get Acala Dollar
+                <span className={classes.testnet}>(Testnet)</span>
+            </Button>
         </div>
     );
 };
@@ -53,7 +56,7 @@ const WhatIsAcala = () => {
         {
             icon: stableCurrencyIcon,
             title: 'Stable Currency',
-            detail: 'Multiple-asset-backed decentralized currency without volatility. Stable by design, aUSD enables borderless and low-cost value transfer globally across all connected blockchains'
+            detail: 'Multiple-asset-backed decentralized digital currency without volatility. Stable by design, aUSD enables borderless and low-cost value transfer globally across all connected blockchains'
         },
         {
             icon: stakingLiquidityIcon,
@@ -74,7 +77,9 @@ const WhatIsAcala = () => {
     return (
         <div>
             <p className={classes.acalaTitle}>What is Acala？</p>
-            <p className={classes.acalaDescribe}>Acala is a type of cryptocurrency that is referred to as a stablecoin. You can always redeem 1 Acala Dollar for US$1.00, giving it a stable price. On Acala, eligible customers can earn rewards for every Acala Dollar they hold.</p>
+            <p className={classes.acalaDescribe}>
+                Acala Dollar (aUSD) is a decentralized stablecoin that allows users to send and receive USD across any blockchains connected to the Polkadot network.
+            </p>
             <DescribeAcala describes={describes} />
         </div>
     );
@@ -119,7 +124,10 @@ const AcalaFeatures = React.forwardRef(({}, ref) => {
                 }
             </ul>
             <Button className={classes.goToAppsBtn} suffix={'right-arrow'} link="https://apps.acala.network/">
-                GO to App
+                <div>
+                    GO to App
+                    <div className={classes.testnet}>(Testnet)</div>
+                </div>
             </Button>
         </div>
     );

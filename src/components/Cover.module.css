@@ -34,7 +34,9 @@
     align-items: center;
     margin-top: 17px;
     margin-right: 60px;
+    cursor: pointer;
 }
+
 .memberItem:last {
     margin-right: 0;
 }
@@ -45,11 +47,21 @@
     height: 50px;
     object-fit: contain;
     margin-bottom: 8px;
+    transition: 300ms ease-in-out;
 }
 
 .memberItemTitle {
     font-size: 16px;
     line-height: 19px;
+    transition: 300ms ease-in-out;
+}
+
+.memberItem:hover .memberItemTitle {
+    color: #333333;
+}
+
+.memberItem:hover .memberItemImg {
+    filter: grayscale(0);
 }
 
 .assetsList {

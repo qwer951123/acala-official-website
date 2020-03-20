@@ -125,8 +125,8 @@ export const Roadmap = () => {
             quarter: 'Q4',
             item: [
                 { text: 'Staking Liquidity Enabled', complated: false },
-                { text: 'Cross-chain capability', complated: false },
-                { text: 'Cross-chain assets', complated: false }
+                { text: 'Cross-chain Capability', complated: false },
+                { text: 'Cross-chain Assets', complated: false }
             ]
         }
     ]

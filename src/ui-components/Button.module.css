@@ -27,6 +27,10 @@
     color: #0155ff;
 }
 
+.root:hover p, .root:hover span, .root:hover div {
+    color: #0155ff !important;
+}
+
 .root:hover line, .root:hover polyline {
     stroke: #0155ff;
 }

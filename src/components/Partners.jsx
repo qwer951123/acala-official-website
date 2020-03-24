@@ -14,9 +14,9 @@ import digitalRenaissance from '../assets/digitalRenaissance.svg';
 import { Container } from '../ui-components/Container';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
-const ListItem = React.forwardRef(({ img, link, onClick }, ref) => (
+const ListItem = React.forwardRef(({ name, img, link, onClick }, ref) => (
     <li className={classes.item} ref={ref} onClick={() => { onClick(link) }}>
-        <img src={img} />
+        <img src={img} alt={name} />
     </li>
 ));
 const List = ({ list }) => {
@@ -37,17 +37,17 @@ const List = ({ list }) => {
 
 export const Partners = () => {
     const list = [
-        { img: polychain, link: 'https://polychain.capital' },
-        { img: kr1, link: 'https://kr1.io' },
-        { img: p2pCaptital, link: 'https://www.p2pcap.com' },
-        { img: hashkey, link: 'https://www.hashkey.com' },
-        { img: snz, link: 'https://snzholding.com' },
-        { img: w, link: 'https://web3.capital' },
-        { img: stakeZone, link: 'http://stake.zone' },
-        { img: goodmore, link: 'https://goodmore.capital' },
-        { img: web3Foundation, link: 'https://web3.foundation' },
-        { img: berkeley, link: 'https://www.xcelerator.berkeley.edu' },
-        { img: digitalRenaissance, link: 'https://drf.ee' }
+        { name: 'polychain', img: polychain, link: 'https://polychain.capital' },
+        { name: 'kr1', img: kr1, link: 'https://kr1.io' },
+        { name: 'p2pCaptital', img: p2pCaptital, link: 'https://www.p2pcap.com' },
+        { name: 'hashkey', img: hashkey, link: 'https://www.hashkey.com' },
+        { name: 'snz', img: snz, link: 'https://snzholding.com' },
+        { name: 'web3Capital', img: w, link: 'https://web3.capital' },
+        { name: 'stakeZone', img: stakeZone, link: 'http://stake.zone' },
+        { name: 'goodmore', img: goodmore, link: 'https://goodmore.capital' },
+        { name: 'web3Foundation', img: web3Foundation, link: 'https://web3.foundation' },
+        { name: 'berkeley', img: berkeley, link: 'https://www.xcelerator.berkeley.edu' },
+        { name: 'drf', img: digitalRenaissance, link: 'https://drf.ee' }
     ];
 
     return (

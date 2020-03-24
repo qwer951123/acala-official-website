@@ -9,12 +9,12 @@ import { ShowAnimation } from '../ui-components/ShowAnimation';
 const MemberItem = React.forwardRef(({ photo, name, introduction }, ref) => (
     <li className={classes.memberItem} ref={ref}>
         <div className={classes.memberCover}>
-            <img src={photo} className={classes.memberPhoto} />
+            <img src={photo} className={classes.memberPhoto} alt={name} />
             <p className={classes.memberName}>{name}</p>
         </div>
         <div className={classes.memberDetail}>
             <div className={classes.memberHeader}>
-                <img src={photo} className={classes.memberPhoto} />
+                <img src={photo} className={classes.memberPhoto} alt={name} />
                 <p className={classes.memberName}>{name}</p>
             </div>
             <p className={classes.memberIntroduction}>{introduction}</p>

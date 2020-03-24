@@ -8,7 +8,7 @@ import { ShowAnimation } from '../ui-components/ShowAnimation';
 
 const ListItem = React.forwardRef(({ icon, title, desc }, ref) => (
     <li className={classes.item} ref={ref}>
-        <img src={icon} className={classes.itemIcon} />
+        <img src={icon} className={classes.itemIcon} alt={desc} />
         <p className={classes.itemTitle}>{title}</p>
         <p className={classes.itemDesc}>{desc}</p>
     </li>

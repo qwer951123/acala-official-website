@@ -47,7 +47,7 @@ const Timeline = ({ timeline }) => {
                 {
                     timeline.map(({ year, quarter, item, type }, index) => (
                         <li className={clsx(classes.timelineItem, classes[type])} key={`timeline-${index}`}>
-                            <div className={clsx(classes.precent, classes[type])} /> 
+                            <div className={clsx(classes.precent, classes[type])} />
                             <p>
                                 <span className={classes.timelineYear}>{year}</span>
                                 <span className={classes.timelineQuarter}>.{quarter}</span>
@@ -85,7 +85,7 @@ export const Roadmap = () => {
             year: '2019',
             quarter: 'Q4',
             item: [
-                { text: 'Whitepaper &  Economic model', complated: true },
+                { text: 'Whitepaper & Economic model', complated: true },
                 { text: 'Testnet Candidate 1', complated: true }
             ]
         },

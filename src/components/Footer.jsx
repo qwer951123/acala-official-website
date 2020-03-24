@@ -74,7 +74,7 @@ export const Footer = () => {
             title: 'Foundation',
             data: [
                 { name: 'About', link: '' },
-                { name: 'Contact', link: '' },
+                { name: 'Contact', link: 'mailto:hello@acala.network' },
             ]
         },
     ]

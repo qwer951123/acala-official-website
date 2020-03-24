@@ -40,17 +40,17 @@ export const Councli = () => {
         {
             photo: RuitaoSuPhoto,
             name: 'Ruitao Su',
-            introduction: 'Ruitao Su is the co-founder of Acala. He is also co-founder and CEO of Laminar - a leading synthetic asset and margin trading platform. Ruitao has led design & development of state-of-art token economic models including the decentralized Soverign Wealth Fund (dSWF), led multiple successful token generation events, as well as founded several technology startups.'
+            introduction: 'Ruitao Su is co-founder of Acala. He is also co-founder and CEO of Laminar - a leading synthetic asset and margin trading platform. Ruitao has led design & development of state-of-art token economic models including the decentralized Soverign Wealth Fund (dSWF), led multiple successful token generation events, as well as founded several technology startups.'
         },
         {
             photo: FuyaoJiangPhoto,
             name: 'Fuyao Jiang',
-            introduction: 'Fuyao Jiang is the co-founder of Acala. He is also the founder of Polkawallet - the de facto mobile wallet in Polkadot ecosystem. He was one of Polkadot’s ealiest community builder, opinion leader and evangelist. He has run successfull community campaigns, and presented to various audiences around China.',
+            introduction: 'Fuyao Jiang is co-founder of Acala. He is also the founder of Polkawallet - the de facto mobile wallet in Polkadot ecosystem. He was one of Polkadot’s ealiest community builder, opinion leader and evangelist. He has run successfull community campaigns, and presented to various audiences around China.',
         },
         {
             photo: BryanChanPhoto,
             name: 'Bryan Chen',
-            introduction: 'Bryan Chen is the co-founder of Acala. He is also co-founder and CTO of Laminar. Bryan is a core contributor to the Substrate codebase, an active Polkadot Ambassador, and the lecturer of the first Substrate/Polkadot online course endorsed by Dr Gavin Wood.'
+            introduction: 'Bryan Chen is co-founder of Acala. He is also co-founder and CTO of Laminar. Bryan is a core contributor to the Substrate codebase, an active Polkadot Ambassador, and the lecturer of the first Substrate/Polkadot online course endorsed by Dr Gavin Wood.'
         }
     ]
     return (

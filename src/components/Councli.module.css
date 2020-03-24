@@ -103,6 +103,7 @@
 @media (max-width: 740px) {
   .root {
     background: none;
+    height: auto;
   }
 
   .container {

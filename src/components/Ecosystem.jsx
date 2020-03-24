@@ -7,14 +7,14 @@ import chainlink from '../assets/chainlink.svg';
 import chainx from '../assets/chainx.svg';
 import dipole from '../assets/dipole.svg';
 import plasm from '../assets/plasm.svg';
-import polkaWord from '../assets/polka-world.svg';
+import polkaWorld from '../assets/polka-world.svg';
 import isubsocial from '../assets/isubsocial.svg';
 import anpool from '../assets/anpool.svg';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
-const Item = React.forwardRef(({ img, link, onClick }, ref) => (
+const Item = React.forwardRef(({ name, img, link, onClick }, ref) => (
     <li className={classes.ecosystemItem} onClick={() => onClick(link)} ref={ref}>
-        <img src={img} />
+        <img src={img} alt={name} />
     </li>
 ))
 const List = ({ list }) => {
@@ -34,13 +34,13 @@ const List = ({ list }) => {
 }
 export const Ecosystem = () => {
     const list = [
-        { img: chainlink, link: 'https://chain.link' },
-        { img: chainx, link: 'https://chainx.org/' },
-        { img: dipole, link: 'https://www.dipole.tech' },
-        { img: plasm, link: 'https://www.plasmnet.io' },
-        { img: polkaWord, link: 'https://xanpool.com' },
-        { img: isubsocial, link: 'http://subsocial.network' },
-        { img: anpool, link: 'https://xanpool.com' },
+        { name: 'chainlink', img: chainlink, link: 'https://chain.link' },
+        { name: 'chainx', img: chainx, link: 'https://chainx.org/' },
+        { name: 'dipole', img: dipole, link: 'https://www.dipole.tech' },
+        { name: 'plasm', img: plasm, link: 'https://www.plasmnet.io' },
+        { name: 'polka-world', img: polkaWorld, link: 'https://xanpool.com' },
+        { name: 'isubsocial', img: isubsocial, link: 'http://subsocial.network' },
+        { name: 'anpool', img: anpool, link: 'https://xanpool.com' },
     ];
     return (
         <section className={classes.root}>
@@ -54,7 +54,7 @@ export const Ecosystem = () => {
                         </div>
                     </ShowAnimation>
                     <ShowAnimation delay={4}>
-                        <img src={ecosystemImg} className={classes.image} />
+                        <img src={ecosystemImg} className={classes.image} alt="ecosystem" />
                     </ShowAnimation>
                 </div>
                 <List list={list} />

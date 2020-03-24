@@ -18,14 +18,12 @@ const observer = new IntersectionObserver((entry) => {
 export const ShowAnimation = ({ children, delay }) => {
     const ref = createRef();
     useEffect(() => {
-    }, []);
-    useEffect(() => {
         const $ele = ref.current;
         if ($ele) {
             $ele.classList.add(classes.initialize);
             $ele.setAttribute('data-delay', delay);
             observer.observe($ele);
         }
-    }, [ref]);
+    }, [ref, delay]);
     return React.cloneElement(children, { ...children.props, ref });
 }

@@ -18,7 +18,7 @@ const MemberItem = ({ name, icon, hoverIcon, link }) => {
     const onMouseOver = () => setHover(true);
     return (
         <li className={classes.memberItem} key={`member-${name}`} onClick={onClick} onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
-            <img className={classes.memberItemImg} src={hover ? hoverIcon : icon} />
+            <img className={classes.memberItemImg} src={hover ? hoverIcon : icon} alt={name} />
             <p className={classes.memberItemTitle}>{name}</p>
         </li>
     );
@@ -38,7 +38,7 @@ const Assets = ({ assets }) => {
         <ul className={classes.assetsList}>
             {assets.map(({ name, icon }) => (
                 <li className={classes.assetItem} key={`asset-${name}`}>
-                    <img className={classes.assetItemImg} src={icon} />
+                    <img className={classes.assetItemImg} src={icon} alt={name} />
                     <p className={classes.assetItemTitle}>{name}</p>
                 </li>
             ))}
@@ -59,7 +59,7 @@ export const Cover = () => {
     return (
         <section className={classes.root}>
             <Container>
-                <img src={coverBackground} className={classes.background} />
+                <img src={coverBackground} className={classes.background} alt="cover-background" />
                 <h1 className={classes.title}>
                     A decentralized stablecoin platform powering cross-blockchain open
                     finance applications

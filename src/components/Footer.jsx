@@ -1,9 +1,9 @@
 import React from 'react';
 import twitterIcon from '../assets/twitter.svg';
 import mediumIcon from '../assets/medium.svg';
-import facebookIcon from '../assets/facebook.svg'
+// import facebookIcon from '../assets/facebook.svg'
 import linkinIcon from '../assets/linkedin.svg';
-import wechatIcon from '../assets/wechat.svg';
+// import wechatIcon from '../assets/wechat.svg';
 import { Container } from '../ui-components/Container';
 import classes from './Footer.module.css';
 
@@ -13,8 +13,8 @@ const SocialMedia = ({ list }) => {
             {
                 list.map(({ link, icon }, index) => (
                     <li className={classes.socialMediaItem} key={`social-media-${index}`}>
-                        <a href={link}>
-                            <img src={icon}/>
+                        <a href={link} target="_blank" rel="noopener noreferrer">
+                            <img src={icon} alt={link} />
                         </a>
                     </li>
                 ))
@@ -51,7 +51,7 @@ export const Footer = () => {
         { link: 'https://medium.com/acalanetwork', icon: mediumIcon },
         // { link: '', icon: facebookIcon },
         { link: 'https://www.linkedin.com/company/acalanetwork/', icon: linkinIcon },
-        { link: '', icon: wechatIcon },
+        // { link: '', icon: wechatIcon },
     ];
     const links = [
         {

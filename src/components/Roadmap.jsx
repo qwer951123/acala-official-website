@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useRef } from 'react';
+import React, { createRef, useRef } from 'react';
 import clsx from 'clsx';
 import classes from './Roadmap.module.css';
 import { Container } from '../ui-components/Container';

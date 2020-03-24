@@ -30,7 +30,7 @@ const Token = () => {
 const DescribeItem = React.forwardRef(({ icon, title, detail }, ref) => {
     return (
         <li className={classes.describeItem} ref={ref}>
-            <img src={icon} className={classes.describeIcon} />
+            <img src={icon} className={classes.describeIcon} alt={title} />
             <p className={classes.describeTitle}>{title}</p>
             <p className={classes.describeDetail}>{detail}</p>
         </li>
@@ -85,7 +85,7 @@ const WhatIsAcala = () => {
     );
 };
 
-const AcalaFeatures = React.forwardRef(({}, ref) => {
+const AcalaFeatures = React.forwardRef((_, ref) => {
     const features = [
         {
             icon: borrowIcon,
@@ -114,7 +114,7 @@ const AcalaFeatures = React.forwardRef(({}, ref) => {
                 {
                     features.map(({ icon, title, detail }, index) => (
                         <li className={classes.featureItem} key={`features-${index}`}>
-                            <img src={icon} className={classes.featureIcon} />
+                            <img src={icon} className={classes.featureIcon} alt={title} />
                             <div className={classes.featureContent}>
                                 <p className={classes.featureTitle}>{title}</p>
                                 <p className={classes.featureDetail}>{detail}</p>

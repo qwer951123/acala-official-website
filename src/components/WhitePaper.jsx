@@ -16,7 +16,7 @@ const DocumentList = React.forwardRef(({ list }, ref) => {
                 list.map(({ icon, title, detail, link }, index) => (
                     <div key={`document-${index}`}>
                         <li className={classes.documentItem}>
-                            <img src={icon} className={classes.documentIcon}/>
+                            <img src={icon} className={classes.documentIcon} alt={title} />
                             <p className={classes.documentTitle}>{title}</p>
                             <p className={classes.documentDetail}>{detail}</p>
                             <Button className={classes.documentLink} link={link}>
@@ -58,7 +58,7 @@ export const WhitePaper = () => {
                 <div className={classes.background}/>
                 <ShowAnimation>
                     <div className={classes.summary}>
-                        <img className={classes.icon} src={acalaLogo}/>
+                        <img className={classes.icon} src={acalaLogo} alt="logo" />
                         <p className={classes.title}>Acala’s Whitepaper</p>
                         <p className={classes.detail}>
                             Acala Foundation’s research generally focuses on decentralized finance protocol and mechanism design, parachain economic modelling and governance.

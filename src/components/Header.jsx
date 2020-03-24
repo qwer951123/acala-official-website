@@ -59,14 +59,14 @@ export const Header = () => {
     return (
         <header className={classes.header}>
             <Container className={classes.container}>
-                <img src={logo} className={classes.logo} />
+                <img src={logo} className={classes.logo} alt="logo" />
                 <div className={classes.menu}>
                     <Menu title={'Resource'} className={classes.menuItem} menu={resourceMenu} />
                     <Menu title={'Products'} className={classes.menuItem} menu={productMenu} />
                     <Menu title={'Foundation'} className={classes.menuItem} menu={foundationMenu} />
                 </div>
                 <div className={classes.mobileMenu} onClick={toggle}>
-                    <img src={status ? closeIcon : menuIcon } />
+                    <img src={status ? closeIcon : menuIcon } alt="menu" />
                 </div>
                 <div className={clsx(classes.mobileMenuContainer, {[classes.show]: status })}>
                     <Menu title={'Resource'} className={classes.menuItem} menu={resourceMenu} onClick={toggle} />

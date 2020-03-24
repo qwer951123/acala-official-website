@@ -25,6 +25,12 @@
     height: 16px;
 }
 
+.socialMediaItem img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
 .links {
     display: flex;
     margin-left: -60px;
@@ -56,6 +62,7 @@
 .linkDataItemLink:hover {
     text-decoration: underline;
 }
+
 
 @media (max-width: 740px) {
     .root {

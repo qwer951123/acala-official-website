@@ -4,6 +4,7 @@ import mediumIcon from '../assets/medium.svg';
 // import facebookIcon from '../assets/facebook.svg'
 import linkinIcon from '../assets/linkedin.svg';
 // import wechatIcon from '../assets/wechat.svg';
+import githubIcon from '../assets/github.svg';
 import { Container } from '../ui-components/Container';
 import classes from './Footer.module.css';
 
@@ -50,7 +51,8 @@ export const Footer = () => {
         { link: 'https://twitter.com/AcalaNetwork', icon: twitterIcon },
         { link: 'https://medium.com/acalanetwork', icon: mediumIcon },
         // { link: '', icon: facebookIcon },
-        { link: 'https://www.linkedin.com/company/acalanetwork/', icon: linkinIcon },
+        { link: 'https://github.com/AcalaNetwork', icon: githubIcon },
+        { link: 'https://www.linkedin.com/company/acalanetwork', icon: linkinIcon },
         // { link: '', icon: wechatIcon },
     ];
     const links = [

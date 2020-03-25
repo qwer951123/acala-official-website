@@ -6,9 +6,11 @@ import p2pCaptital from '../assets/p2pCapital.svg';
 import hashkey from '../assets/hashkey.svg';
 import snz from '../assets/snz.svg';
 import stakeZone from '../assets/stakeZone.svg';
-import w from '../assets/w.svg';
+import w3 from '../assets/w.svg';
 import goodmore from '../assets/goodmore.svg';
-import web3Foundation from '../assets/web3Foundation.svg';
+import web3Foundation from '../assets/web3-foundation.svg';
+import p2pValidator from '../assets/p-2-p-validator.svg';
+import hypersphere from '../assets/hypersphere.svg';
 import berkeley from '../assets/berkeley.svg';
 import digitalRenaissance from '../assets/digitalRenaissance.svg';
 import { Container } from '../ui-components/Container';
@@ -21,7 +23,7 @@ const ListItem = React.forwardRef(({ name, img, link, onClick }, ref) => (
 ));
 const List = ({ list }) => {
     list = list.sort(() => 0.5 - Math.random());
-    const onClick = link => window.open(link);
+    const onClick = link => link && window.open(link);
     return (
         <ul className={classes.list}>
             {
@@ -42,12 +44,14 @@ export const Partners = () => {
         { name: 'p2pCaptital', img: p2pCaptital, link: 'https://www.p2pcap.com' },
         { name: 'hashkey', img: hashkey, link: 'https://www.hashkey.com' },
         { name: 'snz', img: snz, link: 'https://snzholding.com' },
-        { name: 'web3Capital', img: w, link: 'https://web3.capital' },
+        { name: 'web3Capital', img: w3, link: 'https://web3.capital' },
         { name: 'stakeZone', img: stakeZone, link: 'http://stake.zone' },
         { name: 'goodmore', img: goodmore, link: 'https://goodmore.capital' },
         { name: 'web3Foundation', img: web3Foundation, link: 'https://web3.foundation' },
         { name: 'berkeley', img: berkeley, link: 'https://www.xcelerator.berkeley.edu' },
-        { name: 'drf', img: digitalRenaissance, link: 'https://drf.ee' }
+        { name: 'drf', img: digitalRenaissance, link: 'https://drf.ee' },
+        { name: 'p2pValidator', img: p2pValidator, link: 'https://p2p.org/' },
+        { name: 'hypersphere', img: hypersphere, link: '' },
     ];
 
     return (

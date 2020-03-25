@@ -7,8 +7,10 @@ import ErmalKaleciPhoto from '../photo/Ermal_Kaleci.svg';
 import YuZhuLiuPhoto from '../photo/Yuzhu_Liu.svg';
 import JianJiangWangPhoto from '../photo/Jianjiang_Wang.svg';
 import HaoQiuPhoto from '../photo/Hao_Qiu.svg';
-import LaminarLogo from '../assets/laminar-color.svg';
-import PolkaWalletLogo from '../assets/polkadot-wallet-color.svg';
+import JackPlatts from '../photo/Jack_Platts.svg';
+import LaminarLogo from '../assets/laminar-logo-team.svg';
+import PolkaWalletLogo from '../assets/polkawallet-logo-team.svg';
+import Web3FoundationLogo from '../assets/web3-foundation-logo-team.svg';
 import ControllRightArrow from '../assets/control-right-arrow.svg';
 import { Container } from '../ui-components/Container';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
@@ -18,7 +20,7 @@ const MemberItem = React.forwardRef(({ photo, name, title, icon, company }, ref)
         <img src={photo} className={classes.memberPhoto} alt={name} />
         <p className={classes.memberName}>{name}</p>
         <p className={classes.memberTitle}>{title}</p>
-        <img src={icon} className={classes.memberCompany} alt={company} />
+        <img src={icon} className={clsx(classes.memberCompany, classes[company])} alt={company} />
     </li>
 ));
 const Member = React.forwardRef(({ members }, ref) => {
@@ -98,6 +100,13 @@ export const Team = () => {
             title: 'Full-stack Engineer',
             company: 'polkawallet',
             icon: PolkaWalletLogo
+        },
+        {
+            photo: JackPlatts,
+            name: 'Jack Platts',
+            title: 'Advsior',
+            company: 'web3-foundation',
+            icon: Web3FoundationLogo
         }
     ].sort(() => 0.5 - Math.random()));
     const ref = useRef();

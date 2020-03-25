@@ -10,6 +10,7 @@ import plasm from '../assets/plasm.svg';
 import polkaWorld from '../assets/polka-world.svg';
 import isubsocial from '../assets/isubsocial.svg';
 import anpool from '../assets/anpool.svg';
+import phala from '../assets/phala-long.svg';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
 const Item = React.forwardRef(({ name, img, link, onClick }, ref) => (
@@ -38,9 +39,10 @@ export const Ecosystem = () => {
         { name: 'chainx', img: chainx, link: 'https://chainx.org/' },
         { name: 'dipole', img: dipole, link: 'https://www.dipole.tech' },
         { name: 'plasm', img: plasm, link: 'https://www.plasmnet.io' },
-        { name: 'polka-world', img: polkaWorld, link: 'https://xanpool.com' },
+        { name: 'polka-world', img: polkaWorld, link: 'https://www.polkaworld.org' },
         { name: 'isubsocial', img: isubsocial, link: 'http://subsocial.network' },
         { name: 'anpool', img: anpool, link: 'https://xanpool.com' },
+        { name: 'phala', img: phala, link: 'https://phala.network' }
     ];
     return (
         <section className={classes.root}>

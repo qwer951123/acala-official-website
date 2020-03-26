@@ -56,7 +56,7 @@ const WhatIsAcala = () => {
         {
             icon: stableCurrencyIcon,
             title: 'Stable Currency',
-            detail: 'Multiple-asset-backed decentralized digital currency without volatility. Stable by design, aUSD enables borderless and low-cost value transfer globally across all connected blockchains'
+            detail: 'Multiple-asset-backed decentralized digital currency without volatility. Stable by design, aUSD enables borderless and low-cost value transfer globally across all connected blockchains.'
         },
         {
             icon: stakingLiquidityIcon,
@@ -66,12 +66,12 @@ const WhatIsAcala = () => {
         {
             icon: powerPolkadotIcon,
             title: 'Powered by Polkadot',
-            detail: "Acala Network is highly secured under Polkadot's shared security model, and highly resilient with forkless upgradability."
+            detail: "Acala Network is secured under Polkadot's shared security model, ensuring high resilience and forkless upgradability."
         },
         {
             icon: InfluenceOwnershipIcon,
             title: 'Influence by Ownership',
-            detail: 'Led by a decentralized consortium, governed by Acala Network Token (ACA) holders to achieve decentralization, a future of more truth & less trust.'
+            detail: 'A decentralized network governed entirely by Acala Network Token (ACA) holders to achieve a transparent future: a future based on more truth and less trust.'
         }
     ];
     return (

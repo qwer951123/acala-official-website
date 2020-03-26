@@ -38,12 +38,12 @@ export const GetInvolved = () => {
         {
             icon: partners,
             title: 'Partners',
-            desc: 'Collaborate and build with Acala members, integrate Acala stablecoin into your products and services.'
+            desc: 'Collaborate and build with Acala members and integrate Acala stablecoin with your products and services.'
         },
         {
             icon: investores,
             title: 'Investors',
-            desc: 'Talk to us about investing in Acala Network Laminar and Polkawallet venture portfolio.'
+            desc: 'Talk to us about investing in Acala Network, Laminar and Polkawallet venture portfolio.'
         }
     ];
     return (

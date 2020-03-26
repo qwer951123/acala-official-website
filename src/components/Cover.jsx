@@ -48,9 +48,10 @@ const Assets = ({ assets }) => {
 
 export const Cover = () => {
     const members = [
-        { name: "Polkwallet", icon: polkaWalletIcon, hoverIcon: polkaWalletColorIcon, link: 'https://www.laminar.one' },
-        { name: "Laminar", icon: laminarIcon, hoverIcon: laminarColorIcon, link: 'https://polkawallet.io' }
+        { name: "Laminar", icon: laminarIcon, hoverIcon: laminarColorIcon, link: 'https://laminar.one' },
+        { name: "Polkwallet", icon: polkaWalletIcon, hoverIcon: polkaWalletColorIcon, link: 'https://www.polkawallet.io' }
     ];
+
     const assets = [
         { name: "Acala", icon: acalaIcon },
         { name: "Karura", icon: karuraIcon },
@@ -67,6 +68,9 @@ export const Cover = () => {
                 <div className={classes.member}>
                     <div>Founding Members</div>
                     <Member members={members} />
+                </div>
+                <div className={classes.separator}>
+                    <span>Networks</span>
                 </div>
                 <Assets assets={assets} />
             </Container>

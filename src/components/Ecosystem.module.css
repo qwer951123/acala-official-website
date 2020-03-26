@@ -10,6 +10,10 @@
   color: #333333;
 }
 
+.appyLink {
+  border-radius: 5px;
+}
+
 .content {
   display: flex;
   margin-top: 102px;

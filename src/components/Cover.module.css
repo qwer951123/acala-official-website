@@ -16,6 +16,19 @@
     height: 595px;
     object-fit: cover;
 }
+.separator {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator span {
+    background-color: #fff;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #98a5ae;
+}
 
 .member {
     margin-top: 20px;
@@ -99,6 +112,13 @@
         top: 0;
         width: 227px;
         height: 222px;
+    }
+    .separator {
+        display: flex;
+        height: 1px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color:  #ecf0f2;
     }
 
     .title {

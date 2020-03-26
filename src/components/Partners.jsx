@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Partners.module.css';
 import polychain from '../assets/polychain.svg';
 import kr1 from '../assets/kr1.svg';
-import p2pCaptital from '../assets/p2pCapital.svg';
+import p2pCaptital from '../assets/p2p-capital.svg';
 import hashkey from '../assets/hashkey.svg';
 import snz from '../assets/snz.svg';
 import stakeZone from '../assets/stakeZone.svg';

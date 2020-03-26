@@ -51,8 +51,10 @@ export const Ecosystem = () => {
                 <div className={classes.content}>
                     <ShowAnimation>
                         <div className={classes.detail}>
-                            <p>This program identifies, engages and supports projects that are using and integrating with Acala’s technologies (aUSD stablecoine, L-DOT staking liquidity, Decentralized Exchange etc). Ecosystem projects will have opportunities for technical and marketing collaborations and beyond.</p>
-                            <Button link={'https://forms.gle/iYPUrNzSWGmyvPUp6'}>Apply</Button>
+                            <p>
+                                This program identifies and supports projects that integrate with Acala’s technologies (aUSD stablecoine, L-DOT staking liquidity, Decentralized Exchange etc). Ecosystem projects will have opportunities for technical and marketing collaborations and beyond.
+                            </p>
+                            <Button c className={classes.appyLink} link={'https://forms.gle/iYPUrNzSWGmyvPUp6'}>Apply</Button>
                         </div>
                     </ShowAnimation>
                     <ShowAnimation delay={4}>

@@ -104,7 +104,7 @@ export const Team = () => {
         {
             photo: JackPlatts,
             name: 'Jack Platts',
-            title: 'Advsior',
+            title: 'Advisor',
             company: 'web3-foundation',
             icon: Web3FoundationLogo
         }

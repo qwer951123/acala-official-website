@@ -17,7 +17,7 @@ const MemberItem = ({ name, icon, hoverIcon, link }) => {
     const onMouseOut = () => setHover(false);
     const onMouseOver = () => setHover(true);
     return (
-        <li className={classes.memberItem} key={`member-${name}`} onClick={onClick} onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
+        <li className={classes.memberItem} onClick={onClick} onMouseOver={onMouseOver} onMouseOut={onMouseOut}>
             <img className={classes.memberItemImg} src={hover ? hoverIcon : icon} alt={name} />
             <p className={classes.memberItemTitle}>{name}</p>
         </li>
@@ -27,7 +27,7 @@ const Member = ({ members }) => {
     return (
         <ul className={classes.memberList}>
             {members.map((item) => (
-                <MemberItem {...item} />
+                <MemberItem {...item} key={`member-${item.name}`} />
             ))}
         </ul>
     );
@@ -49,7 +49,7 @@ const Assets = ({ assets }) => {
 export const Cover = () => {
     const members = [
         { name: "Laminar", icon: laminarIcon, hoverIcon: laminarColorIcon, link: 'https://laminar.one' },
-        { name: "Polkwallet", icon: polkaWalletIcon, hoverIcon: polkaWalletColorIcon, link: 'https://www.polkawallet.io' }
+        { name: "Polkwallet", icon: polkaWalletIcon, hoverIcon: polkaWalletColorIcon, link: 'https://polkawallet.io' }
     ];
 
     const assets = [

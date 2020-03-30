@@ -120,7 +120,7 @@ export const Team = () => {
         const itemWidht = $item.clientWidth;
         const itemMargin = parseInt(window.getComputedStyle($item)['margin-right']);
         maxCount.current = Math.ceil($list.clientWidth / ((itemWidht + itemMargin) * 3)) - 1;
-    }, [ref.current]);
+    }, []);
 
     useEffect(() => {
         const $list = ref.current;

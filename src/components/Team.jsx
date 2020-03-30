@@ -8,6 +8,7 @@ import YuZhuLiuPhoto from '../photo/Yuzhu_Liu.svg';
 import JianJiangWangPhoto from '../photo/Jianjiang_Wang.svg';
 import HaoQiuPhoto from '../photo/Hao_Qiu.svg';
 import JackPlatts from '../photo/Jack_Platts.svg';
+import ShaunWang from '../photo/Shaun_Wang.svg';
 import LaminarLogo from '../assets/laminar-logo-team.svg';
 import PolkaWalletLogo from '../assets/polkawallet-logo-team.svg';
 import Web3FoundationLogo from '../assets/web3-foundation-logo-team.svg';
@@ -107,6 +108,13 @@ export const Team = () => {
             title: 'Advisor',
             company: 'web3-foundation',
             icon: Web3FoundationLogo
+        },
+        {
+            photo: ShaunWang,
+            name: 'Shaun Wang',
+            title: 'Senior Software Engineer',
+            company: 'laminar',
+            icon: LaminarLogo,
         }
     ].sort(() => 0.5 - Math.random()));
     const ref = useRef();
@@ -119,7 +127,7 @@ export const Team = () => {
         const $item = $list.querySelector('li');
         const itemWidht = $item.clientWidth;
         const itemMargin = parseInt(window.getComputedStyle($item)['margin-right']);
-        maxCount.current = Math.ceil($list.clientWidth / ((itemWidht + itemMargin) * 3)) - 1;
+        maxCount.current = Math.ceil($list.clientWidth / ((itemWidht + itemMargin) * 3));
     }, []);
 
     useEffect(() => {

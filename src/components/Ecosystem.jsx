@@ -12,6 +12,7 @@ import isubsocial from '../assets/isubsocial.svg';
 import anpool from '../assets/anpool.svg';
 import phala from '../assets/phala-long.svg';
 import purestake from '../assets/purestake.png';
+import ont from '../assets/ont.png';
 import centrifuge from '../assets/centrifuge.svg'
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
@@ -46,7 +47,8 @@ export const Ecosystem = () => {
         { name: 'anpool', img: anpool, link: 'https://xanpool.com' },
         { name: 'phala', img: phala, link: 'https://phala.network' },
         { name: 'purestake', img: purestake, link: 'https://www.purestake.com', },
-        { name: 'centrifuge', img: centrifuge, link: 'https://centrifuge.io', }
+        { name: 'centrifuge', img: centrifuge, link: 'https://centrifuge.io', },
+        { name: 'ont', img: ont, link: 'https://ont.io' }
     ];
     return (
         <section className={classes.root}>

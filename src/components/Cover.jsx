@@ -49,7 +49,7 @@ const Assets = ({ assets }) => {
 export const Cover = () => {
     const members = [
         { name: "Laminar", icon: laminarIcon, hoverIcon: laminarColorIcon, link: 'https://laminar.one' },
-        { name: "Polkwallet", icon: polkaWalletIcon, hoverIcon: polkaWalletColorIcon, link: 'https://polkawallet.io' }
+        { name: "Polkawallet", icon: polkaWalletIcon, hoverIcon: polkaWalletColorIcon, link: 'https://polkawallet.io' }
     ];
 
     const assets = [

@@ -20,8 +20,11 @@ function Index() {
   return (
     <div className="App" style={{ visibility: visibility ? 'visible' : 'hidden' }}>
       <Header />
+      <Anchor id="cover" />
       <Cover />
+      <Anchor id="information" />
       <Infromation />
+      <Anchor id="whitepaper" />
       <WhitePaper />
       <Anchor id="council" />
       <Councli />

@@ -14,7 +14,8 @@ import phala from '../assets/phala-long.svg';
 import purestake from '../assets/purestake.png';
 import ont from '../assets/ont.png';
 import interlay from '../assets/interlay.png';
-import centrifuge from '../assets/centrifuge.svg'
+import centrifuge from '../assets/centrifuge.svg';
+import moonbeam from '../assets/moonbeam.svg';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
 const Item = React.forwardRef(({ name, img, link, onClick }, ref) => (
@@ -50,7 +51,8 @@ export const Ecosystem = () => {
         { name: 'purestake', img: purestake, link: 'https://www.purestake.com', },
         { name: 'centrifuge', img: centrifuge, link: 'https://centrifuge.io', },
         { name: 'ont', img: ont, link: 'https://ont.io' },
-        { name: 'interlay', img: interlay, link: 'https://www.interlay.io/' }
+        { name: 'interlay', img: interlay, link: 'https://www.interlay.io/' },
+        { name: 'moonbeam', img: moonbeam, link: 'https://moonbeam.network' }
     ];
     return (
         <section className={classes.root}>

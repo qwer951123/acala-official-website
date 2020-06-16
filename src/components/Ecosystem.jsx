@@ -1,4 +1,6 @@
 import React from 'react';
+import clsx from 'clsx';
+
 import classes from './Ecosystem.module.css';
 import { Container } from '../ui-components/Container';
 import { Button } from '../ui-components/Button';
@@ -16,18 +18,28 @@ import ont from '../assets/ont.png';
 import interlay from '../assets/interlay.png';
 import centrifuge from '../assets/centrifuge.svg';
 import moonbeam from '../assets/moonbeam.svg';
+import onfinality from '../assets/onfinality.svg';
+import figment from '../assets/figment.svg';
+import ankr from '../assets/ankr.svg';
+import chorus from '../assets/chorus.svg';
+import snz from '../assets/snz.svg';
+import subscan from '../assets/subscan.svg';
+import ryabina from '../assets/ryabina.svg';
+import p2pValidator from '../assets/p-2-p-validator.svg';
+
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
-const Item = React.forwardRef(({ name, img, link, onClick }, ref) => (
-    <li className={classes.ecosystemItem} onClick={() => onClick(link)} ref={ref}>
-        <img src={img} alt={name} />
+const Item = React.forwardRef(({ name, img, link, style, onClick }, ref) => (
+    <li className={classes.ecosystemItem} onClick={() => onClick(link)} ref={ref} >
+        <img src={img} alt={name} style={style} />
     </li>
 ))
-const List = ({ list }) => {
+const List = ({ className, list }) => {
     list = list.sort(() => 0.5 - Math.random());
+
     const onClick = link => window.open(link);
     return (
-        <ul className={classes.ecosystemList}>
+        <ul className={clsx(className, classes.ecosystemList)}>
             {
                 list.map((item, index) => (
                     <ShowAnimation delay={index} key={`ecosystem-${index}`}>
@@ -42,18 +54,29 @@ export const Ecosystem = () => {
     const list = [
         { name: 'chainlink', img: chainlink, link: 'https://chain.link' },
         { name: 'chainx', img: chainx, link: 'https://chainx.org/' },
-        { name: 'dipole', img: dipole, link: 'https://www.dipole.tech' },
+        { name: 'dipole', img: dipole, link: 'https://www.dipole.tech', style: { 'max-width': '60%' } },
         { name: 'plasm', img: plasm, link: 'https://www.plasmnet.io' },
         { name: 'polka-world', img: polkaWorld, link: 'https://www.polkaworld.org' },
         { name: 'isubsocial', img: isubsocial, link: 'http://subsocial.network' },
         { name: 'anpool', img: anpool, link: 'https://xanpool.com' },
         { name: 'phala', img: phala, link: 'https://phala.network' },
-        { name: 'purestake', img: purestake, link: 'https://www.purestake.com', },
         { name: 'centrifuge', img: centrifuge, link: 'https://centrifuge.io', },
         { name: 'ont', img: ont, link: 'https://ont.io' },
-        { name: 'interlay', img: interlay, link: 'https://www.interlay.io/' },
-        { name: 'moonbeam', img: moonbeam, link: 'https://moonbeam.network' }
+        { name: 'interlay', img: interlay, link: 'https://www.interlay.io' },
+        { name: 'moonbeam', img: moonbeam, link: 'https://moonbeam.network' },
+        { name: 'subscan', img: subscan, link: 'https://www.subscan.io' },
+        { nama: 'ryabina', img: ryabina, link: 'https://ryabina.io' }
     ];
+    const proofPartners = [
+        { name: 'OnFinality', img: onfinality, link: 'https://www.onfinality.io' },
+        { name: 'purestake', img: purestake, link: 'https://www.purestake.com', },
+        { name: 'figment-network', img: figment, link: 'https://figment.network' },
+        { name: 'ankr', img: ankr, link: 'https://www.ankr.com' },
+        { name: 'chorus', img: chorus, link: 'https://chorus.one' },
+        { name: 'p2pValidator', img: p2pValidator, link: 'https://p2p.org' },
+        { name: 'snz', img: snz, link: 'https://snzholding.com' }
+    ];
+
     return (
         <section className={classes.root}>
             <Container>
@@ -72,6 +95,8 @@ export const Ecosystem = () => {
                     </ShowAnimation>
                 </div>
                 <List list={list} />
+                <p className={clsx(classes.title, classes.proofPartnersTitle)}>Proof-of-Liveness Partners</p>
+                <List list={proofPartners} className={classes.proofPartnesList}/>
             </Container>
         </section>
     );

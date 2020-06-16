@@ -9,6 +9,7 @@
 }
 
 .foundation {
+    margin-bottom: 24px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 600;
@@ -60,6 +61,17 @@
     border-radius: 2px;
 }
 
+.newsletter {
+    margin-top: 52px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3732ff;
+}
+
+.form {
+    margin-top: 24px; 
+}
+
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -71,11 +83,11 @@
 
 .links {
     display: flex;
-    margin-left: -60px;
+    margin-left: -90px;
 }
 
 .linkItem {
-    margin-left: 60px;
+    margin-left: 90px;
 }
 
 .linkItemTitel {

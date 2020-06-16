@@ -91,7 +91,7 @@
     line-height: 19px;
     color: #98a5ae;
 }
-.assetItem:last {
+.assetItem:last-child {
     margin-right: 0;
 }
 

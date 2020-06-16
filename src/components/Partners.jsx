@@ -13,7 +13,6 @@ import p2pValidator from '../assets/p-2-p-validator.svg';
 import hypersphere from '../assets/hypersphere.svg';
 import berkeley from '../assets/berkeley.svg';
 import digitalRenaissance from '../assets/digitalRenaissance.svg';
-import onfinality from '../assets/onfinality.svg';
 import { Container } from '../ui-components/Container';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
@@ -52,8 +51,7 @@ export const Partners = () => {
         { name: 'berkeley', img: berkeley, link: 'https://www.xcelerator.berkeley.edu' },
         { name: 'drf', img: digitalRenaissance, link: 'https://drf.ee' },
         { name: 'p2pValidator', img: p2pValidator, link: 'https://p2p.org' },
-        { name: 'hypersphere', img: hypersphere, link: 'https://www.hypersphere.ventures' },
-        { name: 'OnFinality', img: onfinality, link: 'https://www.onfinality.io' }
+        { name: 'hypersphere', img: hypersphere, link: 'https://www.hypersphere.ventures' }
     ];
 
     return (

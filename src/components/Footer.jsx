@@ -105,10 +105,14 @@ export const Footer = () => {
         <footer className={classes.root}>
             <Container className={classes.container}>
                 <div className={classes.contactWay}>
-                    <p className={classes.foundation}>Acala  Foundation</p>
+                    <p className={classes.foundation}>Acala Foundation</p>
+                    <Links links={links} />
+                </div>
+                <div>
+                    <p className={classes.newsletter}>Newsletter</p>
+                    <div id='form' className={classes.form} />
                     <SocialMedia list={socialMedia} />
                 </div>
-                <Links links={links} />
             </Container>
         </footer>
     );

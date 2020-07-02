@@ -8,6 +8,8 @@ import linkinIcon from '../assets/linkedin.svg';
 import wechatIcon from '../assets/wechat.svg';
 import wechatQRCode from '../assets/wechat-qrcode.jpg';
 import githubIcon from '../assets/github.svg';
+import discordIcon from '../assets/discord.svg';
+import telegramIcon from '../assets/telegram.svg';
 import { Container } from '../ui-components/Container';
 import classes from './Footer.module.css';
 
@@ -74,6 +76,8 @@ export const Footer = () => {
         { link: 'https://github.com/AcalaNetwork', icon: githubIcon },
         { link: 'https://www.linkedin.com/company/acalanetwork', icon: linkinIcon },
         { link: 'https://acala.discourse.group', icon: discourseIcon },
+        { link: 'https://discord.gg/6QHVY4X', icon: discordIcon },
+        { link: 'https://t.me/acalaofficial', icon: telegramIcon },
         { link: '', icon: wechatIcon, img: wechatQRCode },
     ];
     const links = [

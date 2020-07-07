@@ -65,7 +65,6 @@ export const Ecosystem = () => {
         { name: 'interlay', img: interlay, link: 'https://www.interlay.io' },
         { name: 'moonbeam', img: moonbeam, link: 'https://moonbeam.network' },
         { name: 'subscan', img: subscan, link: 'https://www.subscan.io' },
-        { nama: 'ryabina', img: ryabina, link: 'https://ryabina.io' }
     ];
     const proofPartners = [
         { name: 'OnFinality', img: onfinality, link: 'https://www.onfinality.io' },
@@ -74,7 +73,8 @@ export const Ecosystem = () => {
         { name: 'ankr', img: ankr, link: 'https://www.ankr.com' },
         { name: 'chorus', img: chorus, link: 'https://chorus.one' },
         { name: 'p2pValidator', img: p2pValidator, link: 'https://p2p.org' },
-        { name: 'snz', img: snz, link: 'https://snzholding.com' }
+        { name: 'snz', img: snz, link: 'https://snzholding.com' },
+        { nama: 'ryabina', img: ryabina, link: 'https://ryabina.io' }
     ];
 
     return (

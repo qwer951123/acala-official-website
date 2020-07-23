@@ -26,6 +26,7 @@ import snz from '../assets/snz.svg';
 import subscan from '../assets/subscan.svg';
 import ryabina from '../assets/ryabina.svg';
 import p2pValidator from '../assets/p-2-p-validator.svg';
+import ren from '../assets/ren-btc.svg';
 
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
@@ -54,7 +55,7 @@ export const Ecosystem = () => {
     const list = [
         { name: 'chainlink', img: chainlink, link: 'https://chain.link' },
         { name: 'chainx', img: chainx, link: 'https://chainx.org/' },
-        { name: 'dipole', img: dipole, link: 'https://www.dipole.tech', style: { 'max-width': '60%' } },
+        { name: 'dipole', img: dipole, link: 'https://www.dipole.tech', style: { 'maxWidth': '60%' } },
         { name: 'plasm', img: plasm, link: 'https://www.plasmnet.io' },
         { name: 'polka-world', img: polkaWorld, link: 'https://www.polkaworld.org' },
         { name: 'isubsocial', img: isubsocial, link: 'http://subsocial.network' },
@@ -64,7 +65,8 @@ export const Ecosystem = () => {
         { name: 'ont', img: ont, link: 'https://ont.io' },
         { name: 'interlay', img: interlay, link: 'https://www.interlay.io' },
         { name: 'moonbeam', img: moonbeam, link: 'https://moonbeam.network' },
-        { name: 'subscan', img: subscan, link: 'https://www.subscan.io' },
+        { name: 'subscan', img: subscan, link: 'https://www.subscan.io', style: { 'minWidth': '70%' } },
+        { name: 'ren-btc', img: ren, link: 'https://renproject.io', style: { 'maxWidth': '60%' } },
     ];
     const proofPartners = [
         { name: 'OnFinality', img: onfinality, link: 'https://www.onfinality.io' },

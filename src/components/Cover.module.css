@@ -1,5 +1,8 @@
-.title {
+.root {
     margin-top: calc(129px + 90.5px);
+}
+
+.title {
     width: 750px;
     font-size: 45px;
     line-height: 72px;
@@ -105,6 +108,10 @@
 }
 
 @media (max-width: 720px) {
+    .root {
+        margin-top: 72px;
+    }
+
     .background {
         display: block;
         margin: 72px auto 0 auto;

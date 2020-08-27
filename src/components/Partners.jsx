@@ -24,6 +24,7 @@ import CMS from '../assets/CMS.png';
 import divergence from '../assets/divergence.svg';
 import coinfund from '../assets/coinfund.png';
 import dcg from '../assets/dcg.png';
+import zeePrime from '../assets/zee-prime.png';
 
 import { Container } from '../ui-components/Container';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
@@ -70,10 +71,11 @@ export const Partners = () => {
         { name: 'parafi', img: parafi, link: 'https://www.parafi.capital' },
         { name: 'spartan', img: spartan, link: 'https://www.spartangroup.io' },
         { name: 'altonomy', img: altonomy, link: 'https://www.altonomy.com' },
-        { name: 'CMS', img: CMS, link: '' },
-        { name: 'divergence', img: divergence, link: '' },
+        { name: 'CMS', img: CMS, link: 'https://cmsholdings.io', style: { maxWitdh: '60%' } },
+        { name: 'divergence', img: divergence, link: 'http://div.cc' },
         { name: 'coinfund', img: coinfund, link: 'https://coinfund.io' },
-        { name: 'dcg',  img: dcg, link: 'https://dcg.co', style: { background: '#000' } }
+        { name: 'dcg',  img: dcg, link: 'https://dcg.co', style: { maxHeight: '60%'} },
+        { name: 'zeePrime', img: zeePrime, link: 'https://zeeprime.capital', style: { maxHeight: '60%' } }
     ];
 
     return (

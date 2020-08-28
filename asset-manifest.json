@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://acala.subdao.com/static/css/main.691d0f8a.chunk.css",
-    "main.js": "https://acala.subdao.com/static/js/main.066af877.chunk.js",
-    "main.js.map": "https://acala.subdao.com/static/js/main.066af877.chunk.js.map",
+    "main.js": "https://acala.subdao.com/static/js/main.f6561364.chunk.js",
+    "main.js.map": "https://acala.subdao.com/static/js/main.f6561364.chunk.js.map",
     "runtime-main.js": "https://acala.subdao.com/static/js/runtime-main.cd83a62c.js",
     "runtime-main.js.map": "https://acala.subdao.com/static/js/runtime-main.cd83a62c.js.map",
     "static/js/2.abfc9753.chunk.js": "https://acala.subdao.com/static/js/2.abfc9753.chunk.js",
     "static/js/2.abfc9753.chunk.js.map": "https://acala.subdao.com/static/js/2.abfc9753.chunk.js.map",
     "index.html": "https://acala.subdao.com/index.html",
-    "precache-manifest.4bb835dcf362caf1671def346dbdfcf9.js": "https://acala.subdao.com/precache-manifest.4bb835dcf362caf1671def346dbdfcf9.js",
+    "precache-manifest.de1aa4f4a3b24a96917de84374f70239.js": "https://acala.subdao.com/precache-manifest.de1aa4f4a3b24a96917de84374f70239.js",
     "service-worker.js": "https://acala.subdao.com/service-worker.js",
     "static/css/main.691d0f8a.chunk.css.map": "https://acala.subdao.com/static/css/main.691d0f8a.chunk.css.map",
     "static/js/2.abfc9753.chunk.js.LICENSE.txt": "https://acala.subdao.com/static/js/2.abfc9753.chunk.js.LICENSE.txt",
@@ -43,7 +43,7 @@
     "static/media/hypersphere.svg": "https://acala.subdao.com/static/media/hypersphere.ab617a4e.svg",
     "static/media/interlay.png": "https://acala.subdao.com/static/media/interlay.45efab9e.png",
     "static/media/isubsocial.svg": "https://acala.subdao.com/static/media/isubsocial.a2449308.svg",
-    "static/media/kr1.svg": "https://acala.subdao.com/static/media/kr1.790ba97a.svg",
+    "static/media/kr1.png": "https://acala.subdao.com/static/media/kr1.da848a29.png",
     "static/media/mandala.svg": "https://acala.subdao.com/static/media/mandala.38009550.svg",
     "static/media/moonbeam.svg": "https://acala.subdao.com/static/media/moonbeam.262408f7.svg",
     "static/media/onfinality.svg": "https://acala.subdao.com/static/media/onfinality.c1e477f2.svg",
@@ -71,6 +71,6 @@
     "static/js/runtime-main.cd83a62c.js",
     "static/js/2.abfc9753.chunk.js",
     "static/css/main.691d0f8a.chunk.css",
-    "static/js/main.066af877.chunk.js"
+    "static/js/main.f6561364.chunk.js"
   ]
 }

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "https://acala.subdao.com/static/css/main.691d0f8a.chunk.css",
-    "main.js": "https://acala.subdao.com/static/js/main.f6561364.chunk.js",
-    "main.js.map": "https://acala.subdao.com/static/js/main.f6561364.chunk.js.map",
+    "main.js": "https://acala.subdao.com/static/js/main.35bd3d8e.chunk.js",
+    "main.js.map": "https://acala.subdao.com/static/js/main.35bd3d8e.chunk.js.map",
     "runtime-main.js": "https://acala.subdao.com/static/js/runtime-main.cd83a62c.js",
     "runtime-main.js.map": "https://acala.subdao.com/static/js/runtime-main.cd83a62c.js.map",
-    "static/js/2.abfc9753.chunk.js": "https://acala.subdao.com/static/js/2.abfc9753.chunk.js",
-    "static/js/2.abfc9753.chunk.js.map": "https://acala.subdao.com/static/js/2.abfc9753.chunk.js.map",
+    "static/js/2.edc1b85f.chunk.js": "https://acala.subdao.com/static/js/2.edc1b85f.chunk.js",
+    "static/js/2.edc1b85f.chunk.js.map": "https://acala.subdao.com/static/js/2.edc1b85f.chunk.js.map",
     "index.html": "https://acala.subdao.com/index.html",
-    "precache-manifest.de1aa4f4a3b24a96917de84374f70239.js": "https://acala.subdao.com/precache-manifest.de1aa4f4a3b24a96917de84374f70239.js",
+    "precache-manifest.54e2ce86fbafba4cab91fecfa84ea222.js": "https://acala.subdao.com/precache-manifest.54e2ce86fbafba4cab91fecfa84ea222.js",
     "service-worker.js": "https://acala.subdao.com/service-worker.js",
     "static/css/main.691d0f8a.chunk.css.map": "https://acala.subdao.com/static/css/main.691d0f8a.chunk.css.map",
-    "static/js/2.abfc9753.chunk.js.LICENSE.txt": "https://acala.subdao.com/static/js/2.abfc9753.chunk.js.LICENSE.txt",
+    "static/js/2.edc1b85f.chunk.js.LICENSE.txt": "https://acala.subdao.com/static/js/2.edc1b85f.chunk.js.LICENSE.txt",
     "static/media/Antonia_Chen.svg": "https://acala.subdao.com/static/media/Antonia_Chen.b8e43250.svg",
     "static/media/Bette_Chen.svg": "https://acala.subdao.com/static/media/Bette_Chen.6936b791.svg",
     "static/media/Bryan_Chen.svg": "https://acala.subdao.com/static/media/Bryan_Chen.eb40425e.svg",
@@ -33,7 +33,8 @@
     "static/media/chainx.svg": "https://acala.subdao.com/static/media/chainx.2c159dbf.svg",
     "static/media/Councli.module.css": "https://acala.subdao.com/static/media/councli-background.b0dd7ef8.svg",
     "static/media/cover-background.gif": "https://acala.subdao.com/static/media/cover-background.0aee3631.gif",
-    "static/media/dcg.png": "https://acala.subdao.com/static/media/dcg.a43b8af4.png",
+    "static/media/dcg.png": "https://acala.subdao.com/static/media/dcg.23be6900.png",
+    "static/media/dentons.jpg": "https://acala.subdao.com/static/media/dentons.26dddb44.jpg",
     "static/media/digitalRenaissance.svg": "https://acala.subdao.com/static/media/digitalRenaissance.90e3ddfb.svg",
     "static/media/divergence.svg": "https://acala.subdao.com/static/media/divergence.7197c6fc.svg",
     "static/media/ecosystem.svg": "https://acala.subdao.com/static/media/ecosystem.c21d4dff.svg",
@@ -69,8 +70,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cd83a62c.js",
-    "static/js/2.abfc9753.chunk.js",
+    "static/js/2.edc1b85f.chunk.js",
     "static/css/main.691d0f8a.chunk.css",
-    "static/js/main.f6561364.chunk.js"
+    "static/js/main.35bd3d8e.chunk.js"
   ]
 }

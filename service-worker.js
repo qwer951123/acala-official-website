@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://acala.subdao.com/precache-manifest.de1aa4f4a3b24a96917de84374f70239.js"
+  "https://acala.subdao.com/precache-manifest.54e2ce86fbafba4cab91fecfa84ea222.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -43,7 +43,7 @@ const List = ({ className, list }) => {
         <ul className={clsx(className, classes.ecosystemList)}>
             {
                 list.map((item, index) => (
-                    <ShowAnimation delay={index} key={`ecosystem-${index}`}>
+                    <ShowAnimation delay={index} key={`ecosystem-${item.name}`}>
                         <Item {...item} onClick={onClick} />
                     </ShowAnimation>
                 ))
@@ -89,7 +89,7 @@ export const Ecosystem = () => {
                             <p>
                                 This program identifies and supports projects that integrate with Acala’s technologies (aUSD stablecoine, L-DOT staking liquidity, Decentralized Exchange etc). Ecosystem projects will have opportunities for technical and marketing collaborations and beyond.
                             </p>
-                            <Button c className={classes.appyLink} link={'https://forms.gle/iYPUrNzSWGmyvPUp6'}>Apply</Button>
+                            <Button className={classes.appyLink} link={'https://forms.gle/iYPUrNzSWGmyvPUp6'}>Apply</Button>
                         </div>
                     </ShowAnimation>
                     <ShowAnimation delay={4}>

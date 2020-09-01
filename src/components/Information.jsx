@@ -42,7 +42,7 @@ const DescribeAcala = ({ describes }) => {
         <ul className={classes.describe}>
             {
                 describes.map((item , index) => (
-                    <ShowAnimation delay={index + 1} key={`describe-${index}`}>
+                    <ShowAnimation delay={index + 1} key={`describe-${item.title}`}>
                         <DescribeItem {...item} />
                     </ShowAnimation>
                 ))

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { createRef } from 'react';
 import classes from './Partners.module.css';
 
 import polychain from '../assets/polychain.gif';
-import kr1 from '../assets/kr1.svg';
+import kr1 from '../assets/kr1.png';
 import p2pCaptital from '../assets/p2p-capital.svg';
 import hashkey from '../assets/hashkey.svg';
 import snz from '../assets/snz.svg';
@@ -25,23 +25,29 @@ import divergence from '../assets/divergence.svg';
 import coinfund from '../assets/coinfund.png';
 import dcg from '../assets/dcg.png';
 import zeePrime from '../assets/zee-prime.png';
+import dantons from '../assets/dentons.jpg';
 
 import { Container } from '../ui-components/Container';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
+import { useEffect } from 'react';
 
-const ListItem = React.forwardRef(({ name, img, link, onClick, style }, ref) => (
-    <li className={classes.item} ref={ref} onClick={() => { onClick(link) }}>
-        <img src={img} alt={name} className={classes[name]} style={style} />
-    </li>
-));
+const ListItem = React.forwardRef(({ name, img, link, onClick, style }, ref) => {
+    return (
+        <li className={classes.item} ref={ref} onClick={() => { onClick(link) }}>
+            <img src={img} alt={name} className={classes[name]} style={style} />
+        </li>
+    );
+});
 const List = ({ list }) => {
     list = list.sort(() => 0.5 - Math.random());
+
     const onClick = link => link && window.open(link);
+
     return (
         <ul className={classes.list}>
             {
                 list.map((item, index) => (
-                    <ShowAnimation delay={index} key={`partners-${index}`}>
+                    <ShowAnimation delay={index} key={`partners-${item.name}`}>
                         <ListItem {...item} onClick={onClick} />
                     </ShowAnimation>
                 ))
@@ -74,8 +80,9 @@ export const Partners = () => {
         { name: 'CMS', img: CMS, link: 'https://cmsholdings.io', style: { maxWitdh: '60%' } },
         { name: 'divergence', img: divergence, link: 'http://div.cc' },
         { name: 'coinfund', img: coinfund, link: 'https://coinfund.io' },
-        { name: 'dcg',  img: dcg, link: 'https://dcg.co', style: { maxHeight: '60%'} },
-        { name: 'zeePrime', img: zeePrime, link: 'https://zeeprime.capital', style: { maxHeight: '60%' } }
+        { name: 'dcg',  img: dcg, link: 'https://dcg.co', style: { maxHeight: '80%' } },
+        { name: 'zeePrime', img: zeePrime, link: 'https://zeeprime.capital', style: { maxHeight: '60%' } },
+        { name: 'dantons', img: dantons, link: 'https://www.dentons.com' }
     ];
 
     return (

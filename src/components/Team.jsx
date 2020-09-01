@@ -32,7 +32,7 @@ const Member = React.forwardRef(({ members }, ref) => {
                     members.map((item, index) => {
                         if (index < 5) {
                             return (
-                                <ShowAnimation delay={index + 1} key={`team-members-${index}`}>
+                                <ShowAnimation delay={index + 1} key={`team-members-${item.name}`}>
                                     <MemberItem {...item} />
                                 </ShowAnimation>
 

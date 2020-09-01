@@ -19,7 +19,7 @@ const List = ({ list }) => {
         <ul className={classes.list}>
             {
                 list.map((item, index) => (
-                    <ShowAnimation delay={index} key={`get-involved-${index}`}>
+                    <ShowAnimation delay={index} key={`get-involved-${item.title}`}>
                         <ListItem {...item} />
                     </ShowAnimation>
                 ))

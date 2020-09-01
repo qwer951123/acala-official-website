@@ -27,7 +27,7 @@ const Members = ({ members }) => {
         <ul className={classes.members}>
             {
                 members.map((item, index) => (
-                    <ShowAnimation delay={index + 1} key={`councli-${index}`}>
+                    <ShowAnimation delay={index + 1} key={`councli-${item.name}`}>
                         <MemberItem {...item} />
                     </ShowAnimation>
                 ))

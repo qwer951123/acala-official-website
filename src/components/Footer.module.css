@@ -88,6 +88,18 @@
 
 .linkItem {
     margin-left: 90px;
+
+}
+
+.tag {
+    margin-left: 12px;
+    padding: 2px 4px;
+    background-image: linear-gradient(270deg, #E41A72 0%, #FF9372 100%);
+    border-radius: 6px;
+    font-size: 10px;
+    color: #FFFFFF;
+    line-height: 10px;
+    text-decoration: none;
 }
 
 .linkItemTitel {
@@ -97,7 +109,7 @@
 }
 
 .linkItemData {
-    margin-top: 17px;
+    margin-top: 16px;
     font-size: 18px;
     line-height: 26px;
     color: #333333;

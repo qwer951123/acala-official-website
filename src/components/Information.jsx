@@ -78,7 +78,7 @@ const WhatIsAcala = () => {
         <div>
             <p className={classes.acalaTitle}>What is Acala？</p>
             <p className={classes.acalaDescribe}>
-                Acala Dollar (aUSD) is a decentralized stablecoin that allows users to send and receive USD across any blockchains connected to the Polkadot network.
+                Acala is a type of cryptocurrency that is referred to as a stablecoin. You can always redeem 1 Acala Dollar for US$1.00, giving it a stable price. On Acala, eligible customers can earn rewards for every Acala Dollar they hold.
             </p>
             <DescribeAcala describes={describes} />
         </div>

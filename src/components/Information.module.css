@@ -59,13 +59,12 @@
 }
 
 .acalaDescribe {
-    margin: 24px auto 0 auto;
+    margin: 26px auto 0 auto;
     width: 1046px;
     font-size: 18px;
     line-height: 27px;
     color: #333333;
     text-align: center;
-    max-width: 800px;
 }
 
 .describe {

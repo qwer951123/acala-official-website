@@ -1,8 +1,8 @@
-import React, { createRef } from 'react';
+import React from 'react';
 import classes from './Partners.module.css';
 
-import polychain from '../assets/polychain.gif';
-import kr1 from '../assets/kr1.png';
+import polychain from '../assets/polychain.svg';
+import kr1 from '../assets/kr1.svg';
 import p2pCaptital from '../assets/p2p-capital.svg';
 import hashkey from '../assets/hashkey.svg';
 import snz from '../assets/snz.svg';
@@ -13,23 +13,20 @@ import web3Foundation from '../assets/web3-foundation.svg';
 import p2pValidator from '../assets/p-2-p-validator.svg';
 import hypersphere from '../assets/hypersphere.svg';
 import berkeley from '../assets/berkeley.svg';
-import pantera from '../assets/pantera.jpg';
 import arrington from '../assets/arrington-xrp-capital.svg';
 import digitalRenaissance from '../assets/digitalRenaissance.svg';
 import parafi from '../assets/parafi.svg';
 import s1confirmation from '../assets/1confirmation.svg';
-import spartan from '../assets/spartan.jpg';
+import spartan from '../assets/spartan.svg';
 import altonomy from '../assets/altonomy.svg';
-import CMS from '../assets/CMS.png';
+import CMS from '../assets/CMS.svg';
 import divergence from '../assets/divergence.svg';
-import coinfund from '../assets/coinfund.png';
-import dcg from '../assets/dcg.png';
-import zeePrime from '../assets/zee-prime.png';
-import dantons from '../assets/dentons.jpg';
+import coinfund from '../assets/coinfund.svg';
+import dcg from '../assets/dcg.svg';
+import zeePrime from '../assets/zee-prime.svg';
+import dantons from '../assets/dentons.svg';
 
 import { Container } from '../ui-components/Container';
-import { ShowAnimation } from '../ui-components/ShowAnimation';
-import { useEffect } from 'react';
 
 const ListItem = React.forwardRef(({ name, img, link, onClick, style }, ref) => {
     return (
@@ -47,9 +44,7 @@ const List = ({ list }) => {
         <ul className={classes.list}>
             {
                 list.map((item, index) => (
-                    <ShowAnimation delay={index} key={`partners-${item.name}`}>
-                        <ListItem {...item} onClick={onClick} />
-                    </ShowAnimation>
+                    <ListItem {...item} onClick={onClick} key={`partners-${item.name}`} />
                 ))
             }
         </ul>
@@ -71,14 +66,13 @@ export const Partners = () => {
         { name: 'drf', img: digitalRenaissance, link: 'https://drf.ee' },
         { name: 'p2pValidator', img: p2pValidator, link: 'https://p2p.org' },
         { name: 'hypersphere', img: hypersphere, link: 'https://www.hypersphere.ventures' },
-        { name: 'pantera', img: pantera, link: 'https://www.panteracapital.com' },
         { name: '1confirmation', img: s1confirmation, link: 'https://www.1confirmation.com' },
         { name: 'arrington', img: arrington, link: 'http://arringtonxrpcapital.com', style: { maxWidth: '60%' } },
         { name: 'parafi', img: parafi, link: 'https://www.parafi.capital' },
         { name: 'spartan', img: spartan, link: 'https://www.spartangroup.io' },
         { name: 'altonomy', img: altonomy, link: 'https://www.altonomy.com' },
-        { name: 'CMS', img: CMS, link: 'https://cmsholdings.io', style: { maxWitdh: '60%' } },
-        { name: 'divergence', img: divergence, link: 'http://div.cc' },
+        { name: 'CMS', img: CMS, link: 'http://cmsholdings.io', style: { maxWitdh: '60%' } },
+        { name: 'divergence', img: divergence, link: 'https://www.div.vc' },
         { name: 'coinfund', img: coinfund, link: 'https://coinfund.io' },
         { name: 'dcg',  img: dcg, link: 'https://dcg.co', style: { maxHeight: '80%' } },
         { name: 'zeePrime', img: zeePrime, link: 'https://zeeprime.capital', style: { maxHeight: '60%' } },

@@ -36,19 +36,19 @@ export const WhitePaper = () => {
         {
             icon: economyIcon,
             title: 'Token Economy',
-            detail: 'This paper outlines key utilities of the ACA tokens and their distribution model to support continuous R&D and gradual decentralization. It then explores economic models involved in parachain auctions over time in various circumstances.',
+            detail: 'This paper outlines key utilities of the ACA tokens, its distribution model to support continuous R&D and gradual decentralization, and explores economic models to participate in parachain auctions over multiple periods under varied circumstances.',
             link: 'https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Acala_Token_Economy_Paper.pdf'
         },
         {
             icon: whitePaperIcon,
             title: 'Acala Whitepaper',
-            detail: 'This paper discusses two decentralized protocols that enable cross-chain financial stability and liquidity on the Polkadot network: the Honzon Stablecoin Protocol and the Homa Tokenized Staking Liquidity Protocol.',
+            detail: 'This paper introduces and elaborates on two decentralized protocols that enable cross-chain financial stability and liquidity on the Polkadot network - the Honzon Stablecoin Protocol and the Homa Tokenized Staking Liquidity Protocol.',
             link: 'https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Acala_Whitepaper.pdf',
         },
         {
             icon: decentralizedIcon,
             title: 'Decentralized Sovereign Wealth Fund (dSWF)',
-            detail: 'This paper proposes a self-sustaining economic model for the era of connected digital jurisdictions: a dSWF to hold foreign cryptocurrency reserves with value, yield and utility; to secure a parachain on Polkadot for itself and others, and the future of R&D for token holders.',
+            detail: 'This paper proposes a self-sustaining economic model for the era of connected digital jurisdictions - a dSWF to hold foreign cryptocurrency reserve with value, yield & utility, to secure a parachain on for itself & others, R&D for generations to come, all on behalf of & governed by token holders.',
             link: 'https://github.com/AcalaNetwork/Acala-white-paper/blob/master/Building_a_Decentralized_Sovereign_Wealth_Fund.pdf'
         }
     ]

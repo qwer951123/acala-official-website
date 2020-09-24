@@ -10,12 +10,12 @@ import chainx from '../assets/chainx.svg';
 import dipole from '../assets/dipole.svg';
 import plasm from '../assets/plasm.svg';
 import polkaWorld from '../assets/polka-world.svg';
-import isubsocial from '../assets/isubsocial.svg';
+import subsocial from '../assets/subsocial.svg';
 import anpool from '../assets/anpool.svg';
 import phala from '../assets/phala-long.svg';
-import purestake from '../assets/purestake.png';
-import ont from '../assets/ont.png';
-import interlay from '../assets/interlay.png';
+import purestake from '../assets/purestake.svg';
+import ont from '../assets/ont.svg';
+import interlay from '../assets/interlay.svg';
 import centrifuge from '../assets/centrifuge.svg';
 import moonbeam from '../assets/moonbeam.svg';
 import onfinality from '../assets/onfinality.svg';
@@ -42,10 +42,8 @@ const List = ({ className, list }) => {
     return (
         <ul className={clsx(className, classes.ecosystemList)}>
             {
-                list.map((item, index) => (
-                    <ShowAnimation delay={index} key={`ecosystem-${item.name}`}>
-                        <Item {...item} onClick={onClick} />
-                    </ShowAnimation>
+                list.map((item) => (
+                    <Item {...item} onClick={onClick} key={`ecosystem-${item.name}`} />
                 ))
             }
         </ul>
@@ -58,7 +56,7 @@ export const Ecosystem = () => {
         { name: 'dipole', img: dipole, link: 'https://www.dipole.tech', style: { 'maxWidth': '60%' } },
         { name: 'plasm', img: plasm, link: 'https://www.plasmnet.io' },
         { name: 'polka-world', img: polkaWorld, link: 'https://www.polkaworld.org' },
-        { name: 'isubsocial', img: isubsocial, link: 'http://subsocial.network' },
+        { name: 'subsocial', img: subsocial, link: 'http://subsocial.network' },
         { name: 'anpool', img: anpool, link: 'https://xanpool.com' },
         { name: 'phala', img: phala, link: 'https://phala.network' },
         { name: 'centrifuge', img: centrifuge, link: 'https://centrifuge.io', },
@@ -87,7 +85,7 @@ export const Ecosystem = () => {
                     <ShowAnimation>
                         <div className={classes.detail}>
                             <p>
-                                This program identifies and supports projects that integrate with Acala’s technologies (aUSD stablecoine, L-DOT staking liquidity, Decentralized Exchange etc). Ecosystem projects will have opportunities for technical and marketing collaborations and beyond.
+                                This program identifies, engages and supports projects that are using and integrating with Acala’s technologies (aUSD stablecoine, L-DOT staking liquidity, Decentralized Exchange etc). Ecosystem projects will have opportunities for technical and marketing collaborations and beyond.
                             </p>
                             <Button className={classes.appyLink} link={'https://forms.gle/iYPUrNzSWGmyvPUp6'}>Apply</Button>
                         </div>

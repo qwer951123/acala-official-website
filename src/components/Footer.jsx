@@ -55,9 +55,14 @@ const Links = ({ links }) => {
                         <p className={classes.linkItemTitel}>{title}</p>
                         <ul className={classes.linkItemData}>
                             {
-                                data.map(({ name, link}, index) => (
+                                data.map(({ name, link, tag }, index) => (
                                     <li className={classes.linkDataItem} key={`links-${index}`}>
-                                        <a href={link} className={classes.linkDataItemLink}>{name}</a>
+                                        <a href={link} className={classes.linkDataItemLink}>
+                                            {name}
+                                            {
+                                                tag ? <span className={classes.tag}>{tag}</span> : null
+                                            }
+                                        </a>
                                     </li>
                                 ))
                             }
@@ -87,6 +92,7 @@ export const Footer = () => {
                 { name: 'Whitepaper', link: 'https://github.com/AcalaNetwork/Acala-white-paper' },
                 { name: 'Documentation', link: 'https://github.com/AcalaNetwork/Acala/wiki' },
                 // { name: 'Brand Assets', link: '' },
+                { name: 'Career', tag: 'HIRING' }
             ]
         },
         {

@@ -1,4 +1,5 @@
 .root {
+  margin-top: 53px;
   width: 100%;
   height: 800px;
   background-image: url("../assets/councli-background.svg");
@@ -9,16 +10,11 @@
   overflow: hidden;
 }
 
-.container {
-  margin-top: 231px;
-  display: flex;
-}
-
 .title {
-  margin-right: 40px;
-  flex: 0 0 248px;
-  line-height: 38px;
-  font-size: 32px;
+  margin: 98px 0 85px 0;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
   font-weight: 600;
   color: #333333;
   white-space: nowrap;
@@ -67,6 +63,10 @@
   text-align: center;
 }
 
+.memberCover .memberPhoto {
+  width: 200px;
+  height: 200px;
+}
 .memberCover > .memberName {
   margin-top: 40px;
   font-size: 24px;

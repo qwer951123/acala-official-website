@@ -4,6 +4,7 @@ import { Container } from '../ui-components/Container';
 import RuitaoSuPhoto from '../photo/Ruitao_Su.svg';
 import FuyaoJiangPhoto from '../photo/Fuyao_Jiang.svg';
 import BryanChanPhoto from '../photo/Bryan_Chen.svg';
+import BettePhoto from '../photo/Bette_Chen.svg';
 import { ShowAnimation } from '../ui-components/ShowAnimation';
 
 const MemberItem = React.forwardRef(({ photo, name, introduction }, ref) => (
@@ -40,26 +41,29 @@ export const Councli = () => {
         {
             photo: RuitaoSuPhoto,
             name: 'Ruitao Su',
-            introduction: 'Ruitao Su is co-founder of Acala. He is also co-founder and CEO of Laminar, a leading synthetic asset and margin trading platform. Ruitao has led the design and development of leading token economic models including the decentralized Sovereign Wealth Fund (dSWF). He has also led multiple successful token generation events and founded several technology startups.'
+            introduction: 'Ruitao Su is the co-founder of Acala. He is also co-founder and CEO of Laminar - a leading synthetic asset and margin trading platform. Ruitao has led design & development of state-of-art token economic models including the decentralized Soverign Wealth Fund (dSWF), led multiple successful token generation events, as well as founded several technology startups.'
+        },
+        {
+            photo: BettePhoto,
+            name: 'Bette Chen',
+            introduction: 'Bette Chen is a co-founder of Acala. She is also co-founder of Laminar. Bette has led product design and development of leading token economic models, protocols and dApps. She has a Bachelor degree in Software Engineering and an MBA from Otago and Duke, with decades of experience in product and program management.'
         },
         {
             photo: FuyaoJiangPhoto,
             name: 'Fuyao Jiang',
-            introduction: 'Fuyao Jiang is co-founder of Acala and founder of Polkawallet, Polkadot’s mobile wallet. He was instrumental in building the Polkadot community and outreach. Fuyao has run many successful community campaigns and presented to numerous audiences around China.',
+            introduction: 'Fuyao Jiang is the co-founder of Acala. He is also the founder of Polkawallet - the de facto mobile wallet in Polkadot ecosystem. He was one of Polkadot’s ealiest community builder, opinion leader and evangelist. He has run successfull community campaigns, and presented to various audiences around China.',
         },
         {
             photo: BryanChanPhoto,
             name: 'Bryan Chen',
-            introduction: 'Bryan Chen is co-founder of Acala. He is also co-founder and CTO of Laminar. As a core contributor to the Substrate codebase, Bryan is an active Polkadot Ambassador. He is also the lecturer of the first Substrate/Polkadot online course endorsed by Dr Gavin Wood.'
+            introduction: 'Bryan Chen is the co-founder of Acala. He is also co-founder and CTO of Laminar. Bryan is a core contributor to the Substrate codebase, an active Polkadot Ambassador, and the lecturer of the first Substrate/Polkadot online course endorsed by Dr Gavin Wood.'
         }
     ]
     return (
         <section className={classes.root}>
             <Container className={classes.container}>
                 <p className={classes.title}>
-                    <span>Foundation</span>
-                    <br/>
-                    <span>Council Members</span>
+                    Foundation Council Members
                 </p>
                 <Members members={members} />
             </Container>

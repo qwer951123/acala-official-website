@@ -48,8 +48,8 @@ const Assets = ({ assets }) => {
 
 export const Cover = () => {
     const members = [
-        { name: "Laminar", icon: laminarIcon, hoverIcon: laminarColorIcon, link: 'https://laminar.one' },
-        { name: "Polkawallet", icon: polkaWalletIcon, hoverIcon: polkaWalletColorIcon, link: 'https://polkawallet.io' }
+        { name: "Polkawallet", icon: polkaWalletIcon, hoverIcon: polkaWalletColorIcon, link: 'https://polkawallet.io' },
+        { name: "Laminar", icon: laminarIcon, hoverIcon: laminarColorIcon, link: 'https://laminar.one' }
     ];
 
     const assets = [
@@ -62,8 +62,7 @@ export const Cover = () => {
             <Container>
                 <img src={coverBackground} className={classes.background} alt="cover-background" />
                 <h1 className={classes.title}>
-                    A decentralized stablecoin platform powering cross-blockchain open
-                    finance applications
+                    A decentralized finance hub and stablecoin platform powering cross blockchain liquidity and applications
                 </h1>
                 <div className={classes.member}>
                     <div>Founding Members</div>

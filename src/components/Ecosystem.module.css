@@ -3,11 +3,11 @@
 }
 
 .title {
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 24px;
+  line-height: 29px;
   text-align: center;
-  font-weight: 600;
-  color: #333333;
+  font-weight: 300;
+  color: #98A4AF;
 }
 
 .appyLink {
@@ -37,33 +37,23 @@
 }
 
 .ecosystemList {
-  margin: -25px -12.5px 0 -12.5px;
+  margin: -25px 0 0 -30px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .ecosystemItem {
-  margin: 25px 12.5px 0 12.5px;
+  margin: 25px 0 0 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 220px;
-  height: 134px;
-  box-shadow: 0 10px 30px rgba(65, 32, 255, 0.11);
-  transition: transform 200ms ease;
+  width: calc(100% / 7 - 30px);
+  height: 90px;
   cursor: pointer;
 }
 
-.ecosystemItem:hover {
-  transform: translate3d(0, -16px, 0);
-}
-
-.ecosystemItem img {
-  max-width: 80%;
-}
-
 .proofPartnersTitle {
-  margin: 90px 0;
+  margin: 90px 0 47px 0;
 }
 
 @media (max-width: 740px) {

@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
-import classes from './Team.module.css';
 import clsx from 'clsx';
-import BetteChenPhoto from '../photo/Bette_Chen.svg';
+import classes from './Team.module.css';
 import AntoniaChenPhoto from '../photo/Antonia_Chen.svg';
 import ErmalKaleciPhoto from '../photo/Ermal_Kaleci.svg';
 import YuZhuLiuPhoto from '../photo/Yuzhu_Liu.svg';
@@ -9,6 +8,8 @@ import JianJiangWangPhoto from '../photo/Jianjiang_Wang.svg';
 import HaoQiuPhoto from '../photo/Hao_Qiu.svg';
 import JackPlatts from '../photo/Jack_Platts.svg';
 import ShaunWang from '../photo/Shaun_Wang.svg';
+import AshleyTyson from '../photo/Ashley_Tyson.svg';
+import DanReecer from '../photo/Dan_Reecer.svg';
 import LaminarLogo from '../assets/laminar-logo-team.svg';
 import PolkaWalletLogo from '../assets/polkawallet-logo-team.svg';
 import Web3FoundationLogo from '../assets/web3-foundation-logo-team.svg';
@@ -61,13 +62,6 @@ const Controll = ({ onNext, onPrev, prevDisabled, nextDisabled }) => {
 export const Team = () => {
     const members = useRef([
         {
-            photo: BetteChenPhoto,
-            name: 'Bette Chen',
-            title: 'Chief Operating Officer',
-            company: 'laminar',
-            icon: LaminarLogo
-        },
-        {
             photo: AntoniaChenPhoto,
             name: 'Antonia Chen',
             title: 'Chief Economist',
@@ -115,6 +109,20 @@ export const Team = () => {
             title: 'Senior Software Engineer',
             company: 'laminar',
             icon: LaminarLogo,
+        },
+        {
+            photo: DanReecer,
+            name: 'Dan Reecer',
+            title: 'Advisor/Contributor',
+            company: 'web3-foundation',
+            icon: Web3FoundationLogo,
+        },
+        {
+            photo: AshleyTyson,
+            name: 'Ashley Tyson',
+            title: 'Advisor',
+            company: 'web3-foundation',
+            icon: Web3FoundationLogo,
         }
     ].sort(() => 0.5 - Math.random()));
     const ref = useRef();
@@ -158,7 +166,7 @@ export const Team = () => {
     return (
         <section className={classes.root}>
             <Container>
-                <div className={classes.title}>Contributors</div>
+                <div className={classes.title}>Meet our team</div>
                 <Member members={members.current} ref={ref} />
                 <Controll onNext={onNext} onPrev={onPrev} prevDisabled={count === 0} nextDisabled={count === maxCount.current}/>
             </Container>

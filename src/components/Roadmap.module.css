@@ -50,8 +50,8 @@
   margin-top: 55.5px;
   margin-right: 48px;
   padding: 30px 24px 38px 24px;
-  flex: 0 0 308px;
-  height: 318px;
+  flex: 0 0 320px;
+  height: 360px;
   background: #ffffff;
   border-radius: 2px;
   box-shadow: 0 5px 19px rgba(1, 50, 204, 0.08);
@@ -80,7 +80,8 @@
   content: "";
   box-sizing: border-box;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
+  background: #4716FF;
   top: -65px;
   left: calc(50% - 7.5px);
   width: 15px;
@@ -149,6 +150,7 @@
 .timelineDetail li {
   position: relative;
   padding-left: 35px;
+  margin: 0 -24px 0 0;
 }
 
 .timelineDetail li:after {

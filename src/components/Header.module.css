@@ -7,8 +7,20 @@
     background: #ffffff;
 }
 
+.header + section {
+    margin-top: 91.5px;
+}
+
+.header.open + section {
+    margin-top: 181.5px;
+}
+
+.header + a + section {
+    margin-top: 91.5px;
+}
+
 .header.open + a + section {
-    margin-top: calc(129px + 90.5px + 90px);
+    margin-top: 181.5px;
 }
 
 .container {

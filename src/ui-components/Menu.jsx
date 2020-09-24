@@ -15,7 +15,7 @@ export const Menu = ({ title, menu, className, onClick }) => {
                     menu && menu.map(({ name, link, anchor }, index) => (
                         <li className={classes.menuItem} key={`${title}-item-${index}`} onClick={onClick}>
                             {
-                                anchor && <a href={`#${anchor}`}>{name}</a>
+                                anchor && <a href={anchor}>{name}</a>
                             }
                             {
                                 link && <a href={link} target="_blank" rel="noopener noreferrer">{name}</a>

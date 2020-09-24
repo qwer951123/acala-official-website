@@ -1,8 +1,9 @@
 .root {
-    margin-top: calc(129px + 90.5px);
+    overflow: hidden;
 }
 
 .title {
+    margin-top: 127.5px;
     width: 750px;
     font-size: 45px;
     line-height: 72px;
@@ -13,24 +14,11 @@
 .background {
     z-index: -1;
     position: absolute;
-    top: -95px;
+    top: -127.5px;
     right: 0;
     width: 607px;
     height: 595px;
     object-fit: cover;
-}
-.separator {
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.separator span {
-    background-color: #fff;
-    font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #98a5ae;
 }
 
 .member {
@@ -81,7 +69,7 @@
 }
 
 .assetsList {
-    margin-top: 157px;
+    margin-top: 157.5px;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -22,33 +22,33 @@ const resourceMenu = [
 const productMenu = [
     {
         name: 'What is Acala',
-        anchor: 'what-is-acala'
+        anchor: 'index.html#what-is-acala'
     },
     {
         name: 'Acala Apps',
-        anchor: 'acala-apps'
+        anchor: 'index.html#acala-apps'
     },
     {
         name: 'Roadmap',
-        anchor: 'roadmap'
+        anchor: 'index.html#roadmap'
     },
 ];
 const foundationMenu = [
     {
         name: 'Council member',
-        anchor: 'council'
+        anchor: 'index.html#council'
     },
     {
         name: 'Contributors',
-        anchor: 'team'
+        anchor: 'index.html#team'
     },
     {
         name: 'Partners',
-        anchor: 'partners'
+        anchor: 'index.html#partners'
     },
     {
         name: 'Ecosystem Projects',
-        anchor: 'ecosystem'
+        anchor: 'index.html#ecosystem'
     },
     {
         name: 'Contact',

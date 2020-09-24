@@ -3,6 +3,13 @@
 }
 
 .title {
+  text-align: center;
+  font-size: 40px;
+  color: #333333;
+}
+
+.subTitle {
+  margin: 90px 0 47px 0;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
@@ -50,10 +57,6 @@
   width: calc(100% / 7 - 30px);
   height: 90px;
   cursor: pointer;
-}
-
-.proofPartnersTitle {
-  margin: 90px 0 47px 0;
 }
 
 @media (max-width: 740px) {

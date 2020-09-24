@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Header } from '../components/Header';
 import { Cover } from '../components/Cover';
 import { Infromation } from '../components/Information';
@@ -12,13 +12,9 @@ import { Ecosystem } from '../components/Ecosystem';
 import { Footer } from '../components/Footer';
 import { Anchor } from '../ui-components/Anchor';
 
-function Index() {
-  const [visibility, setVisibility] = useState(false);
-  useEffect(() => {
-    setTimeout(() => setVisibility(true), 500);
-  }, [])
+function App() {
   return (
-    <div className="App" style={{ visibility: visibility ? 'visible' : 'hidden' }}>
+    <div className="App">
       <Header />
       <Anchor id="cover" />
       <Cover />
@@ -43,4 +39,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default App;

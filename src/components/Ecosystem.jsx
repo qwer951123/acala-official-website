@@ -95,7 +95,7 @@ export const Ecosystem = () => {
                     </ShowAnimation>
                 </div>
                 <List list={list} />
-                <p className={clsx(classes.title, classes.proofPartnersTitle)}>Proof-of-Liveness Partners</p>
+                <p className={classes.subTitle}>Proof-of-Liveness Partners</p>
                 <List list={proofPartners} className={classes.proofPartnesList}/>
             </Container>
         </section>

@@ -57,7 +57,7 @@ const Links = ({ links }) => {
                             {
                                 data.map(({ name, link, tag }, index) => (
                                     <li className={classes.linkDataItem} key={`links-${index}`}>
-                                        <a href={link} className={classes.linkDataItemLink}>
+                                        <a href={link} className={classes.linkDataItemLink} target='_blank' rel="noopener noreferrer">
                                             {name}
                                             {
                                                 tag ? <span className={classes.tag}>{tag}</span> : null
@@ -92,7 +92,7 @@ export const Footer = () => {
                 { name: 'Whitepaper', link: 'https://github.com/AcalaNetwork/Acala-white-paper' },
                 { name: 'Documentation', link: 'https://github.com/AcalaNetwork/Acala/wiki' },
                 // { name: 'Brand Assets', link: '' },
-                { name: 'Career', tag: 'HIRING' }
+                { name: 'Career', link: './hiring.html', tag: 'HIRING' }
             ]
         },
         {

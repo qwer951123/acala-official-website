@@ -141,7 +141,7 @@ module.exports = function(webpackEnv) {
     //   isEnvDevelopment &&
     //     require.resolve('react-dev-utils/webpackHotDevClient'),
     //   paths.appIndexJs,
-    //   paths.appHiringJs,
+    //   paths.appJobsJs,
     // ].filter(Boolean),
     entry: {
       index: [
@@ -149,10 +149,10 @@ module.exports = function(webpackEnv) {
           require.resolve('react-dev-utils/webpackHotDevClient'),
         paths.appIndexJs,
       ].filter(Boolean),
-      hiring: [
+      jobs: [
         isEnvDevelopment &&
           require.resolve('react-dev-utils/webpackHotDevClient'),
-        paths.appHiringJs,
+        paths.appJobsJs,
       ].filter(Boolean)
     },
     output: {
@@ -533,15 +533,15 @@ module.exports = function(webpackEnv) {
             : undefined
         )
       ),
-      // Generates an `hiring.html` file with the <script> injected.
+      // Generates an `jobs.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
           {},
           {
             inject: true,
             template: paths.appHtml,
-            filename: 'hiring.html',
-            chunks: ['hiring']
+            filename: 'jobs.html',
+            chunks: ['jobs']
           },
           isEnvProduction
             ? {

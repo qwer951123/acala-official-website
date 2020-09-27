@@ -92,7 +92,7 @@ export const Footer = () => {
                 { name: 'Whitepaper', link: 'https://github.com/AcalaNetwork/Acala-white-paper' },
                 { name: 'Documentation', link: 'https://github.com/AcalaNetwork/Acala/wiki' },
                 // { name: 'Brand Assets', link: '' },
-                { name: 'Career', link: './hiring.html', tag: 'HIRING' }
+                { name: 'Career', link: './jobs.html', tag: 'HIRING' }
             ]
         },
         {

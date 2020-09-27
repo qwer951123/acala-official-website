@@ -1,9 +1,9 @@
 import React, { useEffect, createRef, useCallback } from 'react';
-import classes from './Hiring.module.css';
+import classes from './Jobs.module.css';
 import { Button } from '../ui-components/Button';
 import { Container } from '../ui-components/Container';
 
-export const Hiring = () => {
+export const Jobs = () => {
     const ref = createRef();
 
     const openBlog = useCallback(() => {

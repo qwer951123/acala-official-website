@@ -4,8 +4,8 @@
 
 .title {
     margin-top: 127.5px;
-    width: 750px;
-    font-size: 45px;
+    width: 780px;
+    font-size: 48px;
     line-height: 72px;
     font-weight: 400;
     color: #333333;
@@ -15,7 +15,7 @@
     z-index: -1;
     position: absolute;
     top: -127.5px;
-    right: 0;
+    right: -20px;
     width: 607px;
     height: 595px;
     object-fit: cover;
@@ -102,9 +102,10 @@
 
     .background {
         display: block;
-        margin: 72px auto 0 auto;
+        margin: 32px auto 0 auto;
         position: relative;
         top: 0;
+        left: -10px;
         width: 227px;
         height: 222px;
     }

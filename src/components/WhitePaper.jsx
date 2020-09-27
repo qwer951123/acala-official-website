@@ -61,7 +61,7 @@ export const WhitePaper = () => {
                         <img className={classes.icon} src={acalaLogo} alt="logo" />
                         <p className={classes.title}>Acala’s Whitepaper</p>
                         <p className={classes.detail}>
-                            Acala Foundation’s research focuses on decentralized finance protocol and mechanism design, parachain economic modelling and governance.
+                            Acala Foundation’s research generally focuses on decentralized finance protocol and mechanism design, parachain economic modeling and governance.
                         </p>
                     </div>
                 </ShowAnimation>

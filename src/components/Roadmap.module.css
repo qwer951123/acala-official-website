@@ -1,7 +1,7 @@
 .root {
   box-sizing: border-box;
   padding: 90px 0;
-  height: 695px;
+  height: 800px;
   background: url("../assets//roadmap-background.svg") 0 0/100% auto no-repeat,
     linear-gradient(-50deg, #3436ff 0%, #5400ff 100%);
 }
@@ -191,18 +191,20 @@
   transform: rotateY(180deg);
 }
 
+.liveRoadmap {
+  margin: 30px auto 40px auto;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
 @media (max-width: 740px) {
   .root {
     margin-top: 50px;
+    margin-bottom: 50px;
     padding-top: 24px;
     padding-bottom: 24px;
     height: auto;
-    background: linear-gradient(
-      to bottom,
-      #3436ff,
-      #3436ff 263px,
-      #ffffff 263px
-    );
+    background: #3436ff;
   }
 
   .title {
@@ -223,7 +225,7 @@
     margin-top: 29.74px;
     margin-right: 24px;
     flex: 0 0 212px;
-    height: 212px;
+    height: 242px;
     padding: 17px;
     white-space: nowrap;
   }

@@ -127,7 +127,7 @@ export const Team = () => {
     ].sort(() => 0.5 - Math.random()));
     const ref = useRef();
     const [count, setCount] = useState(0);
-    const maxCount = useRef(0);
+    const [maxCount, setMaxCount] = useState(0);
 
     useEffect(() => {
         const $list = ref.current;
@@ -135,7 +135,7 @@ export const Team = () => {
         const $item = $list.querySelector('li');
         const itemWidht = $item.clientWidth;
         const itemMargin = parseInt(window.getComputedStyle($item)['margin-right']);
-        maxCount.current = Math.ceil($list.clientWidth / ((itemWidht + itemMargin) * 3));
+        setMaxCount(Math.ceil($list.clientWidth / ((itemWidht + itemMargin) * 3)))
     }, []);
 
     useEffect(() => {
@@ -150,7 +150,7 @@ export const Team = () => {
     const onNext = () => {
         const $list = ref.current;
         if (!$list) return false;
-        if (count < maxCount.current) {
+        if (count < maxCount) {
             setCount(count + 1);
         }
     };
@@ -168,7 +168,7 @@ export const Team = () => {
             <Container>
                 <div className={classes.title}>Meet our team</div>
                 <Member members={members.current} ref={ref} />
-                <Controll onNext={onNext} onPrev={onPrev} prevDisabled={count === 0} nextDisabled={count === maxCount.current}/>
+                <Controll onNext={onNext} onPrev={onPrev} prevDisabled={count === 0} nextDisabled={count === maxCount}/>
             </Container>
         </section>
     );

@@ -19,14 +19,17 @@
     margin-top: 146.5px;
 }
 
-.button {
+.viewCurrentOpening {
     margin: 43px auto;
     padding: 18px 37px !important;
     border: 1px solid #ffffff !important;
     background: transparent !important;
     font-size: 18px !important;
     line-height: 21px !important;
-    color: #ffffff !important;
+}
+
+.viewCurrentOpening:hover {
+    background: #ffffff !important;
 }
 
 .jobs {

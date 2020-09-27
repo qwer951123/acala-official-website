@@ -26,7 +26,7 @@ export const Hiring = () => {
             <div className={classes.header}>
                 <p className={classes.title}>Want to Build the Future of Finance?</p>
                 <p className={classes.title}>Build with Acala</p>
-                <Button className={classes.button}>View Our Current Opening</Button>
+                <Button className={classes.viewCurrentOpening} link='https://angel.co/company/acala-network/jobs'>View Our Current Opening</Button>
             </div>
             <Container className={classes.jobs} ref={ref}>
                 <p className={classes.subTitle}>Who we are looking for</p>

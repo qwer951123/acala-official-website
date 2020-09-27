@@ -167,6 +167,7 @@ export const Roadmap = () => {
             <Container>
                 <p className={classes.title}>Roadmap</p>
                 <Timeline timeline={timeline} />
+                <Button className={classes.liveRoadmap} link='https://www.notion.so/45523f1bc65a43118af3692284734a7e?v=f4904cd7373746399b649c617348de1a'>Live Roadmap</Button>
             </Container>
         </section>
     );

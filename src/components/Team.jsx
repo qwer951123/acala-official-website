@@ -10,6 +10,7 @@ import JackPlatts from '../photo/Jack_Platts.svg';
 import ShaunWang from '../photo/Shaun_Wang.svg';
 import AshleyTyson from '../photo/Ashley_Tyson.png';
 import DanReecer from '../photo/Dan_Reecer.png';
+import QueenaShao from '../photo/Queena_Shao.svg';
 import LaminarLogo from '../assets/laminar-logo-team.svg';
 import PolkaWalletLogo from '../assets/polkawallet-logo-team.svg';
 import Web3FoundationLogo from '../assets/web3-foundation-logo-team.svg';
@@ -107,6 +108,13 @@ export const Team = () => {
             photo: ShaunWang,
             name: 'Shaun Wang',
             title: 'Senior Software Engineer',
+            company: 'laminar',
+            icon: LaminarLogo,
+        },
+        {
+            photo: QueenaShao,
+            name: 'Queena Shao',
+            title: 'UI Designer',
             company: 'laminar',
             icon: LaminarLogo,
         },

@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "480a77d79a5799453b4fce20e0f1e27d",
+    "revision": "b321ac4f5f4c9a1337bc9f730aeb9f17",
     "url": "./index.html"
   },
   {
-    "revision": "42e341e2b867a415d94aba6d2637df48",
+    "revision": "c2e239a4dc3c56aa233dd8be4ef16369",
     "url": "./jobs.html"
   },
   {
-    "revision": "36bd6c5c4d156bfb40ca",
+    "revision": "24e7e2059c8e970c64d0",
     "url": "./static/css/0.cd0eff66.chunk.css"
   },
   {
-    "revision": "01d61a0472d3e1f6f41a",
-    "url": "./static/css/index.ad3923bd.chunk.css"
+    "revision": "4ee12881190f4ed79817",
+    "url": "./static/css/index.7af570ad.chunk.css"
   },
   {
-    "revision": "147cce451844233cdad7",
+    "revision": "afca4399c1e15988a5b5",
     "url": "./static/css/jobs.5cd8e5de.chunk.css"
   },
   {
-    "revision": "36bd6c5c4d156bfb40ca",
-    "url": "./static/js/0.73776752.chunk.js"
+    "revision": "24e7e2059c8e970c64d0",
+    "url": "./static/js/0.148d0dc2.chunk.js"
   },
   {
-    "revision": "9d00df02dbaa43a066a5",
-    "url": "./static/js/1.e72ab6c5.chunk.js"
+    "revision": "9246cbcb2834724407aa",
+    "url": "./static/js/1.3fedb7ed.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "./static/js/1.e72ab6c5.chunk.js.LICENSE.txt"
+    "url": "./static/js/1.3fedb7ed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "01d61a0472d3e1f6f41a",
-    "url": "./static/js/index.4d1df0fd.chunk.js"
+    "revision": "4ee12881190f4ed79817",
+    "url": "./static/js/index.71ba14e8.chunk.js"
   },
   {
-    "revision": "147cce451844233cdad7",
-    "url": "./static/js/jobs.264fb966.chunk.js"
+    "revision": "afca4399c1e15988a5b5",
+    "url": "./static/js/jobs.fc61d218.chunk.js"
   },
   {
     "revision": "17163bbdf3efca47af70",
@@ -94,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cab720947636a3ecb37625d4f33c6652",
     "url": "./static/media/Jianjiang_Wang.cab72094.svg"
+  },
+  {
+    "revision": "52b987e219b2fe319e30909f252a5fff",
+    "url": "./static/media/Queena_Shao.52b987e2.svg"
   },
   {
     "revision": "a87995c66a7966cc93c8402e3efc5584",

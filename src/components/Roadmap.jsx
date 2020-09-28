@@ -1,4 +1,4 @@
-import React, { createRef, useRef } from 'react';
+import React, { createRef, useRef, useCallback, useEffect } from 'react';
 import clsx from 'clsx';
 import classes from './Roadmap.module.css';
 import { Container } from '../ui-components/Container';
@@ -7,35 +7,54 @@ import { RightArrowIcon } from '../ui-components/RightArrowIcon';
 
 const Timeline = ({ timeline }) => {
     const $listRef = createRef();
-    const page = useRef(0);
-    const onNext = () => {
+    const page = useRef(1);
+
+    const move = useCallback((page) => {
         const $list = $listRef.current;
         const $item = $list.querySelector('li');
         if (!$list || !$item) {
             return false;
         }
+        const itemWidth = $item.clientWidth;
+        const marginRight = parseInt(window.getComputedStyle($item)['margin-right']);
+
+        $list.style.transform = `translate3d(-${(itemWidth + marginRight) * 3 * page}px, 0, 0)`
+    }, [$listRef]);
+
+    const onNext = useCallback(() => {
+        const $list = $listRef.current;
+        const $item = $list.querySelector('li');
+
+        if (!$list || !$item) return false;
+
         const listWidth = $list.clientWidth;
         const itemWidth = $item.clientWidth;
         const marginRight = parseInt(window.getComputedStyle($item)['margin-right']);
         const maxPage = Math.ceil(listWidth / ((marginRight + itemWidth) * 3));
+
         if (page.current < maxPage) {
             page.current = page.current + 1;
-            $list.style.transform = `translate3d(-${(itemWidth + marginRight) * 3 * page.current}px, 0, 0)`
+            move(page.current);
         }
-    };
-    const onPrev = () => {
+    }, [$listRef, move]);
+
+    const onPrev = useCallback(() => {
         const $list = $listRef.current;
         const $item = $list.querySelector('li');
-        if (!$list || !$item) {
-            return false;
-        }
-        const itemWidth = $item.clientWidth;
-        const marginRight = parseInt(window.getComputedStyle($item)['margin-right']);
+
+        if (!$list || !$item) return false;
+
         if (page.current > 0) {
             page.current = page.current - 1;
-            $list.style.transform = `translate3d(-${(itemWidth + marginRight) * 3 * page.current}px, 0, 0)`
+            move(page.current);
         }
-    };
+    }, [$listRef, move]);
+
+    useEffect(() => {
+        if (!$listRef.current) return;
+
+        move(page.current);
+    }, [$listRef, move]);
 
     return (
         <div className={classes.timelineContainer}>
